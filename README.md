@@ -2,4 +2,3 @@
 
 
 ## Kredi Takip Projesi 
-aldkfşlkdhfşsldhfşl
