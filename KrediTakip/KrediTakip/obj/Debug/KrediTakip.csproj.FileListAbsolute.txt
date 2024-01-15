@@ -1,0 +1,75 @@
+C:\Users\ASLAN\Desktop\KrediTakip\KrediTakip\bin\Debug\KrediTakip.exe.config
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\bin\Debug\KrediTakip.exe.config
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\bin\Debug\KrediTakip.exe
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\bin\Debug\KrediTakip.pdb
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\obj\Debug\KrediTakip.csprojResolveAssemblyReference.cache
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Kredi_Ekleme.resources
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Menu.resources
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Properties.Resources.resources
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\obj\Debug\KrediTakip.csproj.GenerateResource.Cache
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\obj\Debug\KrediTakip.exe
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\obj\Debug\KrediTakip.pdb
+C:\Users\ASLAN\Desktop\KrediTakip\KrediTakip\obj\Debug\KrediTakip.exe
+C:\Users\ASLAN\Desktop\KrediTakip\KrediTakip\obj\Debug\KrediTakip.pdb
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Resource1.resources
+C:\Users\AKREP\Desktop\KrediTakip\KrediTakip\obj\Debug\KrediTakip.OdemePlani.resources
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.exe.config
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.exe
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.pdb
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.exe
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.pdb
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.csprojResolveAssemblyReference.cache
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Kredi_Ekleme.resources
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Menu.resources
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.OdemePlani.resources
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Properties.Resources.resources
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Resource1.resources
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.csproj.GenerateResource.Cache
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.exe.config
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.exe
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.pdb
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.exe
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.pdb
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.csprojResolveAssemblyReference.cache
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Kredi_Ekleme.resources
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Menu.resources
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.OdemePlani.resources
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Properties.Resources.resources
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Resource1.resources
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.csproj.GenerateResource.Cache
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Evrak_Ekleme.resources
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Rapor.resources
+C:\Users\AKREP\Desktop\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Kefil_Ekleme.resources
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.exe.config
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.exe
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.pdb
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.exe
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.pdb
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.csprojResolveAssemblyReference.cache
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Evrak_Ekleme.resources
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Kefil_Ekleme.resources
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Kredi_Ekleme.resources
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Menu.resources
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.OdemePlani.resources
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Properties.Resources.resources
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Rapor.resources
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Resource1.resources
+C:\Users\AKREP\Desktop\PROGRAMLAR\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.csproj.GenerateResource.Cache
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Evrak_Ekleme.resources
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Kefil_Ekleme.resources
+C:\Users\AKREP\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Rapor.resources
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.csprojAssemblyReference.cache
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Evrak_Ekleme.resources
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Kefil_Ekleme.resources
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Kredi_Ekleme.resources
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Menu.resources
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.OdemePlani.resources
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Properties.Resources.resources
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Rapor.resources
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.Resource1.resources
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.csproj.GenerateResource.cache
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.exe
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\obj\Debug\KrediTakip.pdb
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.exe.config
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.exe
+C:\Users\HARUN\Desktop\HARUN GÖVDERE\kredi\KrediTakip\KrediTakip\bin\Debug\KrediTakip.pdb
