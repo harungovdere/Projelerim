@@ -1,0 +1,93 @@
+{% extends "anasayfa.html" %} {% block body %}
+
+<div id="container">
+  <div id="filter">
+    <button
+          class="btn btn-primary text-left collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+          style="width: 100%;">
+          FİLTRELER
+          <span class="pull-right">
+          {% if button is clicked %}
+          <i class="fas fa-plus"></i>
+          {% else %}
+          <i class="fas fa-minus"></i>
+          {% endif %}
+          </span>
+        </button>
+      </h2>
+    <div id="collapseTwo" class="collapse in" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      
+      <div>
+        <form method="POST" action="{% url 'bisiklet:filtreAra' %}">
+        {% csrf_token %}
+        <div class="form-group">
+        <h4>Markalar</h4>
+        {% for marka in markalar %}
+        <input class="form-check-input" value="{{marka}}" type="checkbox" name="marka"/>
+        {{marka}}
+        <br>
+        {% endfor %}
+
+        <h4>Vitesler</h4>
+        {% for vites in vitesler %}
+        <input class="form-check-input" value="{{vites}}" type="checkbox" name="vites"/>
+        {{vites}}
+        <br>
+        {% endfor %}
+
+        <h4>Jantlar</h4>
+        {% for jant in jantlar %}
+        <input class="form-check-input" value="{{jant}}" type="checkbox" name="jant"/>
+        {{jant}}
+        <br>
+        {% endfor %}
+
+        <h4>Cinsiyetler</h4>
+        {% for cinsiyet in cinsiyetler %}
+        <input class="form-check-input" value="{{cinsiyet}}" type="checkbox" name="cinsiyet"/>
+        {{cinsiyet}}
+        <br>
+        {% endfor %}
+        
+        {% for t in turu %}
+        <input name="turu" value="{{t}}" style="display:none;"/>
+        {% endfor %}
+        <br>
+          <button type="submit" style="width: 100%;" class="btn btn-danger">FİLTRELE</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  {% if urunler %}
+  <div id="liste" >
+  {% for urun in urunler %}
+    <div id="icerik">
+    {% if urun.bisiklet_image %}
+    <img id="rsm" src="{{urun.bisiklet_image.url}}" alt="">
+    {% else %}
+    <img id="rsm" src="/media/resimyok.png" alt="">
+    {% endif %}
+      <h4 name="hadi" value="{{urun.brand}}" style="text-align: center;">{{urun.brand}}</h4>
+      <h4 style="text-align: center;">{{urun.title}}</h4>
+      <h4 style="text-align: center;">{{urun.price}} TL</h4>
+      <a class="btn btn-success" style="width: 100%;" href="{% url 'bisiklet:urunDetay' urun.id %}">İncele</a>
+    </div>
+  {% endfor %}
+  {% else %}
+  {% endif %}
+
+  {% if mesaj %}
+    <span class="alert alert-danger">{{mesaj}}</span>
+    {% else %}
+    {% endif %}
+  </div>
+
+</div>
+{% endblock body %}

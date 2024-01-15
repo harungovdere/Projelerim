@@ -1,0 +1,172 @@
+*{
+   box-sizing: border-box;
+
+ }
+ body{
+   margin: 0;
+   padding: 0;
+   background-color: #dbdbdb;
+   /*background-color: black;*/
+   font-family: 'Open Sans', sans-serif;
+ }
+
+ #navbar{
+   width: 100%;
+   
+   top:0;
+   z-index: 1;
+ }
+
+ #sosyal{
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 100%;
+  top:0;
+  z-index: 1;
+  font-size: 18px;
+  text-align: right;
+  padding: 15px;
+  /*position: sticky;*/
+}
+#sosyal>i{
+  margin-right: 15px;
+  
+}
+#sosyal>a{
+  margin-right: 15px;
+}
+#sosyal>i:hover{
+  opacity: 0.8;
+
+}
+
+#container{
+  width: 100%;
+  float: left;
+  margin: auto;
+  height: auto;
+}
+#container2{
+  width: 100%;
+  float: left;
+  margin: auto;
+  height: auto;
+}
+
+font{
+  float: left;
+  letter-spacing: 2px;
+}
+
+span{
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+header{
+  width: 100%;
+  height: 200px;
+  position: relative;
+  color: white;
+  margin-bottom: 3px;
+}
+#headerResim{
+  width: 100%;
+  height: 200px;
+  /*border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;*/
+  
+}
+#centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+section{
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  /*border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-top: 15px;*/
+  
+  overflow: auto;
+}
+#filter{
+  width: 10%;
+  margin-top: 0.5%;
+  margin-right: 0.5%;
+  float: left;
+  height: auto;
+}
+#liste{
+  width: 89.5%;
+  margin-top: 0.5%;
+  float: left;
+  height: auto;
+}
+
+main{
+  float: left;
+  height: auto;
+  width: 80%;
+  padding: 0.5%;
+}
+#icerik{
+  width: 32.6%;
+  height: auto;
+  display: inline-block;
+  margin-right: 0.5%;
+  margin-bottom: 0.5%;
+  border-radius: 0.5%;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+}
+#rsm{
+  width:100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  
+}
+
+footer{
+  background-color: black;
+  color: white;
+  height: 165px;
+  
+}
+ul{
+  list-style-type:none;
+}
+li{
+  list-style-type:none;
+  color: white;
+  font-size: 15px;
+}
+a{
+  color: white;
+  font-size: 15px;
+}
+#abc{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  height: 170px;
+  
+}
+@media (min-width: 1200px){
+.container {
+    max-width: 80%;
+}
+}
+
+#sepetim{
+  margin: auto;
+  height: auto;
+  text-align: center;
+}
+

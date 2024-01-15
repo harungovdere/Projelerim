@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"/>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+    
+    
+    <title>E-Ticaret Bisiklet Sitesi</title>
+  </head>
+  <body>
+    <header>
+      <div id="sosyal">
+        <span style="float: left">Bisiklet Özgürlüktür</span>
+        <a
+          href="https://www.youtube.com/channel/UC-h2fRQON4EkV5RYgmLd4MA/featured"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://www.facebook.com/PedalTurk2016/"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/pedalturk/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/deltabisiklet"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href=""><i class="fab fa-google"></i></a>
+      </div>
+      
+      <img id="headerResim" src="/media/doga.jpg" alt="" />
+      <div id="centered" style="font-size: 40px">Bisiklet Dünyası</div>
+      
+    </header>
+
+    <section>
+    {% include "includes/navbar.html" %}
+    {% if messages %}
+    {% if message.tags == "info"%}
+    <div  class="alert alert-danger">{{message}}</div>
+    {% else %}
+    <div  class="alert alert-{{message.tags}}">{{message}}</div>
+    {% endif %}
+    {% for message in messages %}
+    <div  class="alert alert-{{message.tags}}">{{message}}</div>
+    {% endfor %}
+    {% endif %}
+    <br>
+
+    {% block body %} 
+    {% endblock body %}
+      <main>
+      
+      </main>
+    </section>
+
+    <footer>
+      <div class="container" >
+        <div class="row">
+          <div class="col-sm-3 col-md-3">
+            <ul class="list-unstyled">
+              <li class="text-muted mb-3">KURUMSAL</li>
+              <li>Hakkımızda</li>
+              <li>Markalar</li>
+              <li>Blog</li>
+              <li>İletişim</li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <ul class="list-unstyled">
+              <li class="text-muted mb-3">ALIŞVERİŞ</li>
+              <li>Mesafeli Satış Sözleşmesi</li>
+              <li>Ödeme ve Teslimat</li>
+              <li>Gizlilik ve Güvenlik</li>
+              <li>Garanti Şartları</li>
+              <li>İade Şartları</li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <ul class="list-unstyled">
+              <li class="text-muted mb-3">YARDIM</li>
+              <li>Kargo Takibi</li>
+              <li>Üyelik</li>
+              <li>Müşteri Hizmetleri</li>
+              <li>Sıkça Sorulan Sorular</li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <li class="text-muted mb-3">BİZİ TAKİP EDİN</li>
+              <a href="https://www.youtube.com/channel/UC-h2fRQON4EkV5RYgmLd4MA/featured">
+              <i class="fab fa-youtube"></i>  Youtube</a> <br>
+              <a href="https://www.facebook.com/PedalTurk2016/">
+              <i class="fab fa-facebook"></i>  Facebook</a> <br>
+              <a href="https://www.instagram.com/pedalturk/">
+              <i class="fab fa-instagram"></i>  İnstagram</a> <br>
+              <a href="https://twitter.com/deltabisiklet">
+              <i class="fab fa-twitter"></i>  Twitter</a> <br>
+              <a href=""><i class="fab fa-google"></i>  Google</a> <br>
+          </div>
+        </div>
+        <div style="text-align:center; ">Tüm Hakları Saklıdır &copy; | 2021</div>
+      </div>
+    </footer>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

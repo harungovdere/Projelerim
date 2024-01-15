@@ -1,0 +1,111 @@
+{% extends 'anasayfa.html' %} 
+
+{% block body %}
+
+  <!-- Post Content Column -->
+  <div style="width: 60%; margin:auto;">
+    <!-- Title -->
+    <h3>{{urun.brand}} {{urun.title}}</h3>
+
+    <!-- Date/Time -->
+    <p>Ürün Eklenme Tarihi: {{urun.created_date}}</p>
+
+    <!-- Preview Image -->
+    {% if urun.bisiklet_image %}
+
+    <img id="rsm" src="{{urun.bisiklet_image.url}}" alt="" />
+    {% else %}
+    <img id="rsm" src="/media/resimyok.png" alt="">
+    {% endif %}
+     
+    <hr>
+
+    
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-light-grey">
+    <tr>
+      <td>Marka</td>
+      <td>{{urun.brand}}</td>
+    </tr>
+    <tr>
+      <td>Bisiklet Tipi</td>
+      <td>{{urun.medicine}}</td>
+    </tr>
+    <tr>
+      <td>Jant</td>
+      <td>{{urun.rim}}</td>
+    </tr>
+    <tr>
+      <td>Vites</td>
+      <td>{{urun.gear}}</td>
+    </tr>
+    <tr>
+      <td>Cinsiyet</td>
+      <td>{{urun.gender}}</td>
+    </tr>
+    <tr>
+      <td>Fiyat</td>
+      <td>{{urun.price}} TL</td>
+    </tr>
+    </table>
+
+    <hr>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" style="background-color: black; color: white;">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#acıklama">Açıklama</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">Yorumlar</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane container active" id="acıklama">{{urun.content|safe}}</div>
+    <div class="tab-pane container fade" id="menu2">
+    {% if yorumlar %}
+    <h4>Yorumlar</h4>
+    <hr>
+    {% for yorum in yorumlar %}
+
+    <div class="media mb-4">
+      <img style="float:left" class="d-flex mr-3 rounded-circle" src="http://placehold.it/100x100" alt="">
+      <h4>{{yorum.yorum_author}}</h4>
+      <h4>{{yorum.yorum_date}}</h4>
+      <br>
+      <h4>{{yorum.yorum_content}}</h4>
+        
+    </div> 
+
+    {% endfor %}
+
+    {% else %}
+    <div class="alert alert-danger">
+    Bu makaleye herhangi bir yorum yazılmamış, ilk yorum yapan siz olun...
+    </div>
+    {% endif %}
+
+    <div class="card my-4">
+          <h5 class="card-header">Yorum Ekle:</h5>
+          <div class="card-body">
+            <form method="post" action="{% url 'bisiklet:yorum' urun.id %}">
+            {% csrf_token %}
+            <div class="form-group">
+            <label for="formGroupExampleInput">İsim</label>
+            <input name="yorum_author" type="text" class="form-control" id="formGroupExampleInput" placeholder="İsminizi girin">
+            </div>
+            <div class="form-group">
+            <label for="formGroupExampleInput">Yorum</label>
+            <textarea name="yorum_content" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Yorum Ekle</button>
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+  <hr>
+
+</div>
+{% endblock body %}

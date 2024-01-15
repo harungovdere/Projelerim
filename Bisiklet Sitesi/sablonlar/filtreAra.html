@@ -1,0 +1,118 @@
+{% extends "anasayfa.html" %} {% block body %}
+
+<div id="container">
+  <div id="filter">
+    <button
+          class="btn btn-primary text-left collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+          style="width: 100%;">
+          FİLTRELER
+          <span class="pull-right">
+          {% if button is clicked %}
+          <i class="fas fa-plus" {% if clicked %}class="fas fa-minus" {% else %}class=fas fa-plus{% endif %}></i>
+          {% else %}
+          <i class="fas fa-minus"></i>
+          {% endif %}
+          </span>
+        </button>
+      </h2>
+    <div id="collapseTwo" class="collapse in" aria-labelledby="headingTwo" data-parent="#accordionExample">
+  
+  <div>
+        <form method="POST" action="{% url 'bisiklet:filtreAra' %}">
+        {% csrf_token %}
+        <div class="form-group">
+        <h4>Markalar</h4>
+        {% for marka in markalar2 %}
+        <input class="form-check-input"{%if marka in markalar%} checked{%endif%} value="{{marka}}" type="checkbox" name="marka"/>
+        {{marka}}
+        <br>
+        {% endfor %}
+
+        <h4>Vitesler</h4>
+        {% for vites in vitesler2 %}
+        <input class="form-check-input"{%if vites in vitesler%} checked{%endif%} value="{{vites}}" type="checkbox" name="vites"/>
+        {{vites}}
+        <br>
+        {% endfor %}
+
+        <h4>Jantlar</h4>
+        {% for jant in jantlar2 %}
+        <input class="form-check-input"{%if jant in jantlar%} checked{%endif%} value="{{jant}}" type="checkbox" name="jant"/>
+        {{jant}}
+        <br>
+        {% endfor %}
+
+        <h4>Cinsiyetler</h4>
+        {% for cinsiyet in cinsiyetler2 %}
+        <input class="form-check-input"{%if cinsiyet in cinsiyetler%} checked{%endif%} value="{{cinsiyet}}" type="checkbox" name="cinsiyet"/>
+        {{cinsiyet}}
+        <br>
+        {% endfor %}
+        {% if bTuru == "" %}
+        <h4>Bisiklet Tipi</h4>
+        {% for tur in turu %}
+        <input class="form-check-input"{%if tur in turler%} checked{%endif%} value="{{tur}}" type="checkbox" name="tur"/>
+        {{tur}}
+        <br>
+        {% endfor %}
+        {% else %}
+        {% endif %}
+
+        {% for t in turu %}
+        <input name="turu" value="{{t}}" style="display:none;"/>
+        {% endfor %}
+        <br>
+          <button type="submit" style="width: 100%;" class="btn btn-danger">FİLTRELE</button>
+          {% if bTuru == "Dağ Bisikleti" %}
+          <a style="width: 100%;" href="{% url 'dag' %}" class='btn btn-primary'>TEMİZLE</a>
+          {% elif bTuru == "Yol-Yarış Bisikleti" %}
+          <a style="width: 100%;" href="{% url 'yol' %}" class='btn btn-primary'>TEMİZLE</a>
+          {% elif bTuru == "Şehir Bisikleti" %}
+          <a style="width: 100%;" href="{% url 'sehir' %}" class='btn btn-primary'>TEMİZLE</a>
+          {% elif bTuru == "Çocuk Bisikleti" %}
+          <a style="width: 100%;" href="{% url 'cocuk' %}" class='btn btn-primary'>TEMİZLE</a>
+          {% elif bTuru == "Katlanabilir Bisiklet" %}
+          <a style="width: 100%;" href="{% url 'katlanabilir' %}" class='btn btn-primary'>TEMİZLE</a>
+          {% elif bTuru == "Cross Bisiklet" %}
+          <a style="width: 100%;" href="{% url 'cross' %}" class='btn btn-primary'>TEMİZLE</a>
+          {% else %}
+          <a style="width: 100%;" href="{% url 'bisiklet:urunler' %}" class='btn btn-primary'>TEMİZLE</a>
+          {% endif %}
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  {% if listeler %}
+  <div id="liste">
+  {% for id,marka,baslik,fiyat,foto in listeler %}
+    <div id="icerik">
+    {% if foto %}
+    <img id="rsm" src="{{foto.url}}" alt="">
+    {% else %}
+    <img id="rsm" src="/media/resimyok.png" alt="">
+    {% endif %}
+      <h4 name="abcd" value="{{marka}}" style="text-align: center;">{{marka}}</h4>
+      <h4 style="text-align: center;">{{baslik}}</h4>
+      <h4 style="text-align: center;">{{fiyat}} TL</h4>
+      <a class="btn btn-success" style="width: 100%;" href="{% url 'bisiklet:urunDetay' id %}">İncele</a>
+    </div>
+  {% endfor %}
+  </div>
+  {% else %}
+  {% endif %}
+
+  {% if mesaj %}
+    <span class="alert alert-danger">{{mesaj}}</span>
+    {% else %}
+    {% endif %}
+  </div>
+
+</div>
+{% endblock body %}

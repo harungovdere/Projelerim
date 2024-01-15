@@ -1,0 +1,28 @@
+{% extends "anasayfa.html" %}
+
+{% block body %}
+<div>
+<h3>Sepetim</h3>
+{% if urunler %}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Marka</th>
+      <th scope="col">Bisiklet Adı</th>
+      <th scope="col">Tür</th>
+      <th scope="col">Jant</th>
+      <th scope="col">Vites</th>
+      <th scope="col">Fiyat</th>
+
+    </tr>
+  </thead>
+</div>
+{% else %}
+
+<div class="alert alert-danger">
+    Henüz bir ürün bulunmuyor...
+</div>
+{% endif %}
+
+{% endblock body %}

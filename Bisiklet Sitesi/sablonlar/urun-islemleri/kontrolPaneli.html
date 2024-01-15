@@ -1,0 +1,63 @@
+{% extends "anasayfa.html" %}
+
+{% block body %}
+
+<h3>Kontrol Paneli</h3>
+<hr>
+
+<a class="btn btn-danger" href="{% url 'bisiklet:urunEkle' %}">Ürün Ekle</a>
+<hr>
+
+{% if urunler %}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Bisiklet Adı</th>
+      <th scope="col">Marka</th>
+      <th scope="col">Tür</th>
+      <th scope="col">Cinsiyet</th>
+      <th scope="col">Jant</th>
+      <th scope="col">Vites</th>
+      <th scope="col">Fiyat</th>
+      <th scope="col">Ekleyen</th>
+      <th scope="col">Eklenen Tarih</th>
+      <th scope="col">Güncelle</th>
+      <th scope="col">Sil</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {% for urun in urunler %}
+    <tr>
+      <th scope="row">{{urun.id}}</th>
+      <td><a href="{% url 'bisiklet:urunDetay' urun.id %}" style="color:black;">{{urun.title}}</a></td>
+      <td>{{urun.brand}}</td>
+      <td>{{urun.medicine}}</td>
+      <td>{{urun.gender}}</td>
+      <td>{{urun.rim}}</td>
+      <td>{{urun.gear}}</td>
+      <td>{{urun.price}} TL</td>
+      <td>{{urun.author.username}}</td>
+      <td>{{urun.created_date}}</td>
+      <td><a href="{% url 'bisiklet:urunGuncelle' urun.id %}" class="btn btn-danger">Güncelle</a></td>
+      <td><a href="{% url 'bisiklet:sil' urun.id %}" class="btn btn-danger">Sil</a></td>
+      
+    </tr>
+    {% endfor %}
+    
+  </tbody>
+</table>
+
+{% else %}
+
+<div class="alert alert-danger">
+    Henüz bir ürün bulunmuyor...
+</div>
+
+{% endif %}
+
+
+
+{% endblock body %}

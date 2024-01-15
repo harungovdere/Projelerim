@@ -1,0 +1,60 @@
+{% extends "anasayfa.html" %} {% block body %}
+
+<div id="container">
+  <div id="filter">
+    <button
+          class="btn btn-primary text-left collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+          style="width: 100%;">
+          FİLTRELER
+          <span class="pull-right">
+          {% if button is clicked %}
+          <i class="fas fa-plus"></i>
+          {% else %}
+          <i class="fas fa-minus"></i>
+          {% endif %}
+          </span>
+        </button>
+      </h2>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <li><a href="">24 Jant Modeller</a></li>
+      <li><a href="">26 Jant Modeller</a></li>
+      <li><a href="">27.5 Jant Modeller</a></li>
+      <li><a href="">28 Jant Modeller</a></li>
+      <li><a href="">29 Jant Modeller</a></li>
+
+      <h2>Markalar</h2>
+      <div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"/>
+          <label class="form-check-label" for="defaultCheck1">
+            Default checkbox
+          </label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="liste">
+  
+    {% if listeler %}
+      {% for marka,baslik,fiyat,foto in listeler %}
+      <div id="icerik">
+      <img id="rsm" src="{{foto}}" alt="">
+      <h4 style="text-align: center;">{{marka}}</h4>
+      <h4 style="text-align: center;">{{baslik}}</h4>
+      <h4 style="text-align: center;">{{fiyat}}</h4>
+      <a class="btn btn-success" style="width: 100%;" href="">İncele</a>
+      </div>
+      {% endfor %}
+    {% else %}
+    {% endif %}
+
+  </div>
+</div>
+
+{% endblock body %}
