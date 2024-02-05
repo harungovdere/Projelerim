@@ -1,0 +1,108 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model FiloKiralama_UI.Dtos.SecondHandAppointmentDtos.UpdateSecondHandAppointmentDto
+
+@{
+    ViewData["Title"] = "UpdateSecondHandAppointment";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<link href="~/car-rental-html-template/css/bootstrap.min.css" rel="stylesheet" />
+
+@* <div asp-validation-summary="All"></div> *@
+
+<h1>İkinci El Randevu Güncelleme Sayfası</h1>
+<button id="test">testt</button>
+<form method="post">
+    <input type="hidden" asp-for="RandevuID" class="form-control" />
+    <input type="hidden" asp-for="KullaniciID" class="form-control" />
+
+    <label>Ad</label>
+    <input type="text" asp-for="Ad" onkeyup="PlakaUcase(this)" style="text-transform:uppercase;" class="form-control" readonly />
+    <span asp-validation-for="Ad"></span>
+    <br />
+    <label>Soyad</label>
+    <input type="text" asp-for="Soyad" onkeyup="PlakaUcase(this)" style="text-transform:uppercase;" class="form-control" readonly />
+    <span asp-validation-for="Soyad"></span>
+    <br />
+    <label>E-Posta</label>
+    <input type="email" asp-for="Email" class="form-control" readonly />
+    <span asp-validation-for="Email"></span>
+    <br />
+    <label>Telefon</label>
+    <input type="tel" asp-for="CepTel" pattern="[0-9]{3} [0-9]{3} [0-9]{2}[0-9]{2}" readonly class="form-control" />
+    <small>Format: 5XX XXX XXXX</small>
+    <span asp-validation-for="CepTel"></span>
+    <br />
+    <label>Araç No</label>
+    <input type="text" asp-for="AracID" onkeyup="PlakaUcase(this)" style="text-transform:uppercase;" class="form-control" />
+    <span asp-validation-for="AracID"></span>
+    <br />
+    <label>Randevu Tarihi</label>
+    <input type="date" asp-for=RandevuTarihi class="form-control">
+    <span asp-validation-for="RandevuTarihi"></span>
+    <br />
+    <label>Randevu Saati</label>
+    @Html.DropDownListFor(x => x.RandevuSaati, new SelectList(""), new { @class = "form-control" })
+    <span asp-validation-for="RandevuSaati"></span>
+    <br />
+    <button class="btn btn-primary">Randevu Bilgilerini Güncelle</button>
+
+</form>
+<script src="~/js/jquery-3.7.1.js"></script>
+<script>
+
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+    function PlakaUcase(UpCstr) {
+        var UCStr = UpCstr.value;
+        UpCstr.value = UCStr.toUpperCase();
+    }
+
+    $(function () {
+        $('#RandevuTarihi').change(function () {
+            var randevuTarihi = $('#RandevuTarihi').val();
+            var tarih = new Date(Date.now())
+
+            var bugunTarihi = tarih.getFullYear() + "-" + (tarih.getMonth() + 1) + "-" + tarih.getDate();
+
+            //2023 - 12 - 31
+            if (new Date(randevuTarihi) < new Date(bugunTarihi)) {
+                alert("Tarih seçimi hatalı")
+
+            }
+
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+
+            $('#RandevuSaati').append("<option value='" + "" + "'>" + "Saat Seçiniz" + "</Option>");
+
+            var teksifir = "0";
+            var ciftsifir = "00";
+            for (var i = 9; i < 18; i++) {
+
+                if (i <= 9) {
+                    $('#RandevuSaati').append("<option value='" + teksifir + [i] + ":" + ciftsifir + "'>" + teksifir + [i] + ":" + ciftsifir + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + teksifir + [i] + ":" + 15 + "'>" + teksifir + [i] + ":" + 15 + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + teksifir + [i] + ":" + 30 + "'>" + teksifir + [i] + ":" + 30 + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + teksifir + [i] + ":" + 45 + "'>" + teksifir + [i] + ":" + 45 + "</Option>");
+
+                }
+                else {
+                    $('#RandevuSaati').append("<option value='" + [i] + ":" + ciftsifir + "'>" + [i] + ":" + ciftsifir + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + [i] + ":" + 15 + "'>" + [i] + ":" + 15 + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + [i] + ":" + 30 + "'>" + [i] + ":" + 30 + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + [i] + ":" + 45 + "'>" + [i] + ":" + 45 + "</Option>");
+
+                }
+            }
+        });
+    });
+   
+
+</script>

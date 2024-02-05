@@ -1,0 +1,35 @@
+﻿@model CreateInsuranceDto
+@{
+    ViewData["Title"] = "CreateInsurance";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+
+<h5>Sigorta Tanımlama Sayfası</h5>
+<form method="post">
+    <label>Poliçe Türü</label>
+    @Html.DropDownListFor(x => x.PoliceTuru, (List<SelectListItem>)ViewBag.t,"Poliçe Türü Seçiniz", new { @class = "form-control" })
+    <br />
+
+    <label>Plaka</label>
+    @Html.DropDownListFor(x => x.Plaka, (List<SelectListItem>)ViewBag.p,"Plaka Seçiniz", new { @class = "form-control" })
+    <br />
+    <label>Brüt Prim</label>
+    <input type="text" asp-for="BrutPrim" class="form-control" />
+    <span asp-validation-for="BrutPrim"></span>
+    <br />
+    <label>Başlangıç Tarihi</label>
+    <input type="date" asp-for="BaslangicTarihi" class="form-control" />
+    <span asp-validation-for="BaslangicTarihi"></span>
+
+    <br />
+    <label>Bitiş Tarihi</label>
+    <input type="date" asp-for="BitisTarihi" class="form-control" />
+    <span asp-validation-for="BitisTarihi"></span>
+
+    <br />
+
+    <button class="btn btn-primary">Poliçe Kaydet</button>
+
+</form>
+

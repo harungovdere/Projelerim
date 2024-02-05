@@ -1,0 +1,382 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model FiloKiralama_UI.Dtos.RentalCarReservedDtos.CreateRentalCarReservedDto
+<!-- Detail Start -->
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<div>
+    <div>
+        @if (@ViewBag.dosyaAdi != null)
+        {
+            <div style="text-align:center"><img src="/Uploads/@ViewBag.dosyaAdi" /></div>
+        }
+        else
+        {
+            <div style="text-align:center"><img src="/Uploads/Görsel hazırlanmaktadır.png" /></div>
+        }
+        <div style="text-align:center"><h2>@ViewBag.markaAdi</h2></div>
+        <div style="text-align:center"><h3>@ViewBag.tipAdi</h3> </div>
+        @* <button  id="test">testt</button> *@
+
+        @*  <div class="row align-items-center pb-2">
+        <div class="col-lg-6 mb-4">
+        <img class="img-fluid" src="/car-rental-html-template/img/bg-banner.jpg" alt="">
+        </div>
+        <div class="col-lg-6 mb-4">
+        <h4 class="mb-2">$99.00/Da</h4>
+        <h3 class="display-4 text-uppercase mb-5">Mercedes Benz R3</h3>
+        <p>Tempor erat elitr at rebum at at clita aliquyam consetetur.</p>
+
+        </div>
+        </div>
+        <div class="row mt-n3 mt-lg-0 pb-4">
+        <div class="col-md-3 col-6 mb-2">
+        <i class="fa fa-car text-primary mr-2"></i>
+        <span>Model: 2015</span>
+        </div>
+        <div class="col-md-3 col-6 mb-2">
+        <i class="fa fa-cogs text-primary mr-2"></i>
+        <span>Automatic</span>
+        </div>
+        <div class="col-md-3 col-6 mb-2">
+        <i class="fa fa-road text-primary mr-2"></i>
+        <span>20km/liter</span>
+        </div>
+        <div class="col-md-3 col-6 mb-2">
+        <i class="fa fa-eye text-primary mr-2"></i>
+        <span>GPS Navigation</span>
+        </div>
+
+        </div>*@
+    </div>
+</div>
+<!-- Detail End -->
+<!-- Car Booking Start -->
+
+<div>
+    <div class="container">
+        <div style="text-align:center">
+            <div>
+                @using (Html.BeginForm("RentCarDetail", "Default", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <input type="hidden" asp-for=TipID value="@ViewBag.tipID" class="form-control" />
+                    <input type="hidden" asp-for="KullaniciID" value="@ViewBag.kullaniciID" class="form-control" />
+                    <h2>İletişim Bilgileriniz</h2>
+                    <div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="text" asp-for=Ad class="form-control p-4" value="@ViewBag.ad" readonly>
+                                <span asp-validation-for="Ad"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="text" asp-for=Soyad class="form-control p-4" value="@ViewBag.soyad" readonly>
+                                <span asp-validation-for="Soyad"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="email" asp-for=Email class="form-control p-4" value="@ViewBag.mail" readonly>
+                                <span asp-validation-for="Email"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                @* <input type="tel" asp-for=CepTel class="form-control p-4" value="@ViewBag.tel" pattern="[0-9]{3} [0-9]{3} [0-9]{2}[0-9]{2}" readonly> *@
+                                <input type="tel" asp-for=CepTel class="form-control p-4" value="@ViewBag.tel" readonly>
+                                @* <small>Format: 5XX XXX XXXX</small> *@
+                                <span asp-validation-for="CepTel"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="mb-4">Rezervasyon Detayı</h2>
+                    <div class="mb-5">
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label>Teslim Alma Konumu</label>
+                                <select asp-for=TeslimAlmaKonumu class="custom-select px-4" style="height: 50px;">
+                                    @* <option selected>Teslim Alma Konumu</option> *@
+                                    <option value="">Seçiniz</option>
+                                    <option value="Ankara Esenboğa Havalimanı">Ankara Esenboğa Havalimanı</option>
+                                    <option value="İstanbul Sabiha Gökçen Hvl. Dış Ht.">İstanbul Sabiha Gökçen Hvl. Dış Ht.</option>
+                                    <option value="İstanbul Sabiha Gökçen Hvl. İç Ht.">İstanbul Sabiha Gökçen Hvl. İç Ht.</option>
+                                    <option value="İstanbul Sarıyer Vadi İstanbul AVM">İstanbul Sarıyer Vadi İstanbul AVM</option>
+                                    <option value="İstanbul Şişli Astoria AVM">İstanbul Şişli Astoria AVM</option>
+                                    <option value="İzmir Adnan Menderes Havalimanı">İzmir Adnan Menderes Havalimanı</option>
+
+                                </select>
+                                <span asp-validation-for="TeslimAlmaKonumu"></span>
+
+                            </div>
+                            <div class="col-6 form-group">
+                                <label>Teslim Etme Konumu</label>
+                                <select asp-for=TeslimEtmeKonumu class="custom-select px-4" style="height: 50px;">
+                                    @* <option selected>Teslim Etme Konumu</option> *@
+                                    <option value="">Seçiniz</option>
+                                    <option value="Ankara Esenboğa Havalimanı">Ankara Esenboğa Havalimanı</option>
+                                    <option value="İstanbul Sabiha Gökçen Hvl. Dış Ht.">İstanbul Sabiha Gökçen Hvl. Dış Ht.</option>
+                                    <option value="İstanbul Sabiha Gökçen Hvl. İç Ht.">İstanbul Sabiha Gökçen Hvl. İç Ht.</option>
+                                    <option value="İstanbul Sarıyer Vadi İstanbul AVM">İstanbul Sarıyer Vadi İstanbul AVM</option>
+                                    <option value="İstanbul Şişli Astoria AVM">İstanbul Şişli Astoria AVM</option>
+                                    <option value="İzmir Adnan Menderes Havalimanı">İzmir Adnan Menderes Havalimanı</option>
+
+                                </select>
+                                <span asp-validation-for="TeslimEtmeKonumu"></span>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label>Teslim Alma Tarihi</label>
+                                @* <div class="date" id="date" data-target-input="nearest">
+                            <input asp-for=TeslimAlmaTarihi type="text" class="form-control p-4 datetimepicker-input" placeholder="Tarih"
+                            data-target="#date" data-toggle="datetimepicker" />
+                            </div> *@
+                                <input type="date" asp-for=TeslimAlmaTarihi class="form-control">
+                                <span asp-validation-for="TeslimAlmaTarihi"></span>
+
+                            </div>
+                            <div class="col-6 form-group">
+                                <label>Teslim Etme Tarihi</label>
+                                @* <div class="date" id="date2" data-target-input="nearest">
+                            <input asp-for=TeslimEtmeTarihi type="text" class="form-control p-4 datetimepicker-input" placeholder="Tarih"
+                            data-target="#date2" data-toggle="datetimepicker" />
+                            </div> *@
+                                <input type="date" asp-for=TeslimEtmeTarihi class="form-control">
+                                <span asp-validation-for="TeslimEtmeTarihi"></span>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label>Teslim Alma Saati</label>
+                                @* <div class="time" id="time" data-target-input="nearest">
+                            <input asp-for=TeslimAlmaSaati type="text" class="form-control p-4 datetimepicker-input" placeholder="Saat"
+                            data-target="#time" data-toggle="datetimepicker" />
+                            </div> *@
+                                @Html.DropDownListFor(x => x.TeslimAlmaSaati, new SelectList(""), new { @class = "form-control" })
+                                <span asp-validation-for="TeslimAlmaSaati"></span>
+
+                            </div>
+                            <div class="col-6 form-group">
+                                <label>Teslim Etme Saati</label>
+                                @* <div class="time" id="time2" data-target-input="nearest">
+                            <input asp-for=TeslimEtmeSaati type="text" class="form-control p-4 datetimepicker-input" placeholder="Saat"
+                            data-target="#time2" data-toggle="datetimepicker" />
+                            </div> *@
+                                @Html.DropDownListFor(x => x.TeslimEtmeSaati, new SelectList(""), new { @class = "form-control" })
+                                <span asp-validation-for="TeslimEtmeSaati"></span>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 form-group">
+                                <label>Günlük Tutar</label>
+                                <input type="hidden" id="gunlukKira" value="@ViewBag.gunlukKira" />
+                                <input type="text" id="gunlukKira2" asp-for=GunlukKira readonly />
+                                <span asp-validation-for="GunlukKira"></span>
+                            </div>
+                            <div class="col-4 form-group">
+                                <label>Toplam Gün Sayısı</label>
+                                <input type="text" id="Gun" asp-for=ToplamGunSayisi readonly />
+                                <span asp-validation-for="ToplamGunSayisi"></span>
+                            </div>
+                            <div class="col-4 form-group">
+                                <label>Toplam Kira Tutarı</label>
+                                <input type="text" id="Tutar" asp-for=ToplamTutar readonly />
+                                <span asp-validation-for="ToplamTutar"></span>
+                            </div>
+                        </div>
+
+                        @* <div class="form-group">
+                    <textarea class="form-control py-3 px-4" rows="3" placeholder="Special Request" required="required"></textarea>
+                    </div> *@
+                        <button id="rezerve" type="submit" class="btn btn-block btn-primary py-3">Rezerve Edin</button>
+                    </div>
+                }
+            </div>
+            @*  <div class="col-lg-4">
+            <div class="bg-secondary p-5 mb-5">
+            <h2 class="text-primary mb-4">Payment</h2>
+            <div class="form-group">
+            <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" name="payment" id="paypal">
+            <label class="custom-control-label" for="paypal">Paypal</label>
+            </div>
+            </div>
+            <div class="form-group">
+            <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" name="payment" id="directcheck">
+            <label class="custom-control-label" for="directcheck">Direct Check</label>
+            </div>
+            </div>
+            <div class="form-group mb-4">
+            <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" name="payment" id="banktransfer">
+            <label class="custom-control-label" for="banktransfer">Bank Transfer</label>
+            </div>
+            </div>
+            <button class="btn btn-block btn-primary py-3">Reserve Now</button>
+            </div>
+            </div>
+            </div> *@
+        </div>
+    </div>
+</div>
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+<script src="~/js/jquery-3.7.1.js"></script>
+<script>
+
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+    // $("#rezerve").click(function () {
+    //     var error = "";
+
+    //     if ($('#Ad-error').text() != "" || $('#Soyad-error').text() != "" || $('#Email-error').text() != "" || $('#CepTel-error').text() != "" || $('#TeslimAlmaKonumu-error').text() != ""
+    //         || $('#TeslimEtmeKonumu-error').text() != "" || $('#TeslimAlmaTarihi-error').text() != "" || $('#TeslimEtmeTarihi-error').text() != "" || $('#TeslimAlmaSaati-error').text()
+    //         || $('#TeslimEtmeSaati-error').text() != "" || $('#GunlukKira-error').text() != "" || $('#ToplamGunSayisi-error').text() != "" || $('#ToplamTutar-error').text() != "") {
+    //         error = "error"
+    //     }
+
+    //     if (error == "")
+    //     {
+    //         alert("İşlem tamamlanmıştır. Rezervasyon detaylarınız mail adresinize gönderilmiştir")
+    //     }
+    // })
+    function PlakaUcase(UpCstr) {
+        var UCStr = UpCstr.value;
+        UpCstr.value = UCStr.toUpperCase();
+    }
+    // $("#kaydet").click(function () {
+    //     var MarkaKoduID = $('#MarkaKodu').val();
+    //     var ModelTipKoduID = $('#ModelTipKodu').val();
+    //     if (MarkaKoduID == "0" || MarkaKoduID == "") {
+    //         $('#MarkaKodu').empty();
+
+    //     }
+    //     if (ModelTipKoduID == "0" || ModelTipKoduID == "") {
+    //         $('#ModelTipKodu').empty();
+
+    //     }
+    // });
+    $(function () {
+        $('#TeslimAlmaTarihi').change(function () {
+            if ($('#TeslimEtmeTarihi').val() != "") {
+                $('#TeslimEtmeTarihi').trigger("change")
+            }
+        })
+    });
+    $(function () {
+        $('#TeslimEtmeTarihi').change(function () {
+            if ($('#TeslimAlmaTarihi').val() != "") {
+                var TeslimAlmaTarihi = $('#TeslimAlmaTarihi').val();
+                var TeslimEtmeTarihi = $('#TeslimEtmeTarihi').val();
+                var gunlukKira2 = $('#gunlukKira').val();
+                var gunlukKira = $('#gunlukKira').val();
+
+                gunlukKira = gunlukKira.replace(".", "");
+                gunlukKira = gunlukKira.replace(",", ".");
+
+                if (new Date(TeslimAlmaTarihi) > new Date(TeslimEtmeTarihi)) {
+                    alert("Tarih seçimi hatalı")
+                }
+                else if (new Date(TeslimAlmaTarihi) == new Date(TeslimEtmeTarihi)) {
+                    var gun = 1;
+                    $('#Gun').val(gun);
+                    $('#Tutar').val(gunlukKira2);
+                    $('#gunlukKira2').val(gunlukKira2);
+                }
+                else {
+                    var fark = Math.abs(new Date(TeslimAlmaTarihi) - new Date(TeslimEtmeTarihi));
+                    var gun = Math.ceil(fark / (1000 * 60 * 60 * 24)) + 1;
+                    var tutar = Number(gunlukKira) * gun;
+                    tutar = tutar.toFixed(2);
+                    if (tutar.toString().length > 6) {
+                        tutar = tutar.replace(".", ",");
+                    }
+
+                    if (tutar.toString().length == 7) {
+                        var s1 = tutar.slice(0, 1)
+                        var s2 = tutar.slice(1)
+                        tutar = s1.concat('.', s2)
+                    }
+                    else if (tutar.toString().length == 8) {
+                        var s1 = tutar.slice(0, 2)
+                        var s2 = tutar.slice(2)
+                        tutar = s1.concat('.', s2)
+                    }
+                    else if (tutar.toString().length == 9) {
+                        var s1 = tutar.slice(0, 3)
+                        var s2 = tutar.slice(3)
+                        tutar = s1.concat('.', s2)
+                    }
+                    else if (tutar.toString().length == 10) {
+                        var s1 = tutar.slice(0, 1)
+                        var s2 = tutar.slice(1, 4)
+                        var s3 = tutar.slice(4)
+                        tutar = s1.concat('.', s2, '.', s3)
+                    }
+                    $('#Gun').val(gun);
+                    $('#Tutar').val(tutar);
+                    $('#gunlukKira2').val(gunlukKira2);
+                }
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+
+            $('#TeslimAlmaSaati').append("<option value='" + "" + "'>" + "Saat Seçiniz" + "</Option>");
+            $('#TeslimEtmeSaati').append("<option value='" + "" + "'>" + "Saat Seçiniz" + "</Option>");
+            var teksifir = "0";
+            var ciftsifir = "00";
+            for (var i = 0; i < 24; i++) {
+                if (i == 0) {
+                    $('#TeslimAlmaSaati').append("<option value='" + ciftsifir + ":" + ciftsifir + "'>" + ciftsifir + ":" + ciftsifir + "</Option>");
+                    $('#TeslimAlmaSaati').append("<option value='" + ciftsifir + ":" + 15 + "'>" + ciftsifir + ":" + 15 + "</Option>");
+                    $('#TeslimAlmaSaati').append("<option value='" + ciftsifir + ":" + 30 + "'>" + ciftsifir + ":" + 30 + "</Option>");
+                    $('#TeslimAlmaSaati').append("<option value='" + ciftsifir + ":" + 45 + "'>" + ciftsifir + ":" + 45 + "</Option>");
+
+                    $('#TeslimEtmeSaati').append("<option value='" + ciftsifir + ":" + ciftsifir + "'>" + ciftsifir + ":" + ciftsifir + "</Option>");
+                    $('#TeslimEtmeSaati').append("<option value='" + ciftsifir + ":" + 15 + "'>" + ciftsifir + ":" + 15 + "</Option>");
+                    $('#TeslimEtmeSaati').append("<option value='" + ciftsifir + ":" + 30 + "'>" + ciftsifir + ":" + 30 + "</Option>");
+                    $('#TeslimEtmeSaati').append("<option value='" + ciftsifir + ":" + 45 + "'>" + ciftsifir + ":" + 45 + "</Option>");
+
+                }
+                else if (i >= 1 && i <= 9) {
+                    $('#TeslimAlmaSaati').append("<option value='" + teksifir + [i] + ":" + ciftsifir + "'>" + teksifir + [i] + ":" + ciftsifir + "</Option>");
+                    $('#TeslimAlmaSaati').append("<option value='" + teksifir + [i] + ":" + 15 + "'>" + teksifir + [i] + ":" + 15 + "</Option>");
+                    $('#TeslimAlmaSaati').append("<option value='" + teksifir + [i] + ":" + 30 + "'>" + teksifir + [i] + ":" + 30 + "</Option>");
+                    $('#TeslimAlmaSaati').append("<option value='" + teksifir + [i] + ":" + 45 + "'>" + teksifir + [i] + ":" + 45 + "</Option>");
+
+                    $('#TeslimEtmeSaati').append("<option value='" + teksifir + [i] + ":" + ciftsifir + "'>" + teksifir + [i] + ":" + ciftsifir + "</Option>");
+                    $('#TeslimEtmeSaati').append("<option value='" + teksifir + [i] + ":" + 15 + "'>" + teksifir + [i] + ":" + 15 + "</Option>");
+                    $('#TeslimEtmeSaati').append("<option value='" + teksifir + [i] + ":" + 30 + "'>" + teksifir + [i] + ":" + 30 + "</Option>");
+                    $('#TeslimEtmeSaati').append("<option value='" + teksifir + [i] + ":" + 45 + "'>" + teksifir + [i] + ":" + 45 + "</Option>");
+                }
+                else {
+                    $('#TeslimAlmaSaati').append("<option value='" + [i] + ":" + ciftsifir + "'>" + [i] + ":" + ciftsifir + "</Option>");
+                    $('#TeslimAlmaSaati').append("<option value='" + [i] + ":" + 15 + "'>" + [i] + ":" + 15 + "</Option>");
+                    $('#TeslimAlmaSaati').append("<option value='" + [i] + ":" + 30 + "'>" + [i] + ":" + 30 + "</Option>");
+                    $('#TeslimAlmaSaati').append("<option value='" + [i] + ":" + 45 + "'>" + [i] + ":" + 45 + "</Option>");
+
+                    $('#TeslimEtmeSaati').append("<option value='" + [i] + ":" + ciftsifir + "'>" + [i] + ":" + ciftsifir + "</Option>");
+                    $('#TeslimEtmeSaati').append("<option value='" + [i] + ":" + 15 + "'>" + [i] + ":" + 15 + "</Option>");
+                    $('#TeslimEtmeSaati').append("<option value='" + [i] + ":" + 30 + "'>" + [i] + ":" + 30 + "</Option>");
+                    $('#TeslimEtmeSaati').append("<option value='" + [i] + ":" + 45 + "'>" + [i] + ":" + 45 + "</Option>");
+                }
+            }
+            $(function () {
+                if ('@ViewBag.mesaj' != '') {
+                    var mesaj = "@Html.Raw(ViewBag.mesaj)";
+
+                    alert(mesaj)
+                    var url = '@Url.Action("Index", "Default")';
+                    window.location.href = url;
+
+                }
+            });
+        });
+    });
+
+</script>

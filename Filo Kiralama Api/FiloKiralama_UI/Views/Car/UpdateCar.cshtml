@@ -1,0 +1,154 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model UpdateCarDto
+
+@{
+    ViewData["Title"] = "UpdateCar";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+<h5>Araç Güncelleme</h5>
+@* <button id="test">testt</button> *@
+<form method="post">
+    <div class="row">
+
+        <div class="col-4 form-group">
+            <input type="hidden" asp-for="AracID" class="form-control" />
+
+            <label>Plaka</label>
+            <input type="text" asp-for="Plaka" onkeyup="PlakaUcase(this)" style="text-transform:uppercase;" class="form-control" />
+            <span asp-validation-for="Plaka"></span>
+            @if (ViewBag.plaka != "" || ViewBag.plaka != null)
+            {
+                <span>@ViewBag.plaka</span>
+            }
+            <br />
+
+            <label>Marka</label>
+            @Html.DropDownListFor(x => x.MarkaKodu, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
+
+            <br />
+            <label>Model</label>
+
+            @Html.DropDownListFor(x => x.TipKodu, (List<SelectListItem>)ViewBag.m, new { @class = "form-control" })
+
+            <br />
+
+            @*@if (ViewBag.n != null)
+            {
+            <label>Model</label>
+            @Html.DropDownListFor(x => x.ModelTipKodu, (List<SelectListItem>)ViewBag.n, new { @class = "form-control" })
+            <br />
+            }*@
+            <label>Model Yılı</label>
+            @Html.DropDownListFor(x => x.ModelYili, (List<SelectListItem>)ViewBag.n, new { @class = "form-control" })
+
+            <br />
+            <label>KM</label>
+            <input type="number" asp-for="KM" placeholder="Kilometre giriniz" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==6) return false;" class="form-control" />
+            <span asp-validation-for="KM"></span>
+            <br />
+            <label>Renk</label>
+            @Html.DropDownListFor(x => x.Renk, (List<SelectListItem>)ViewBag.r, "Renk Seçiniz", new { @class = "form-control" })
+            <span asp-validation-for="Renk"></span>
+            <br />
+            <label>Şanzıman</label>
+            @Html.DropDownListFor(x => x.Sanziman, (List<SelectListItem>)ViewBag.s, "Şanzıman Türü Seçiniz", new { @class = "form-control" })
+            <span asp-validation-for="Sanziman"></span>
+            <br />
+            <label>Yakıt Tipi</label>
+            @Html.DropDownListFor(x => x.YakitTipi, (List<SelectListItem>)ViewBag.y, "Yakıt Tipi Seçiniz", new { @class = "form-control" })
+            <span asp-validation-for="YakitTipi"></span>
+            <br />
+            <label>Durumu</label>
+            @Html.DropDownListFor(x => x.Durum, (List<SelectListItem>)ViewBag.d, "Durum Seçiniz", new { @class = "form-control" })
+            <span asp-validation-for="Durum"></span>
+            <br />
+            <button id="kaydet" class="btn btn-primary">Araç Bilgilerini Güncelle</button>
+        </div>
+    </div>
+</form>
+<script src="~/js/jquery-3.7.1.js"></script>
+<script>
+
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+    function PlakaUcase(UpCstr) {
+        var UCStr = UpCstr.value;
+        UpCstr.value = UCStr.toUpperCase();
+    }
+
+    $(document).ready(function () {
+        $(function () {
+            $.ajax({
+                url: '/Car/MarkaGetir',
+                success: function (data) {
+                    console.log(data);
+                    // $('#MarkaKodu').append("<option value='" + "" + "'>" + "Marka Seçiniz" + "</Option>");
+                    // $('#ModelTipKodu').append("<option value='" + "" + "'>" + "Model Seçiniz" + "</Option>");
+
+                    for (var i = 0; i < data.length; i++) {
+                        $('#MarkaKodu').append("<option value='" + data[i].value + "'>" + data[i].text + "</Option>");
+                    }
+                }
+            });
+        });
+    });
+
+    $(function () {
+        $('#MarkaKodu').change(function () {
+            var MarkaKoduID = $('#MarkaKodu').val();
+            $('#ModelTipKodu').empty();
+            $('#ModelYili').empty();
+            $('#ModelYili').append("<option value='" + "" + "'>" + "Model Yılı Seçiniz" + "</Option>");
+            $('#ModelTipKodu').append("<option value='" + "" + "'>" + "Model Seçiniz" + "</Option>");
+            $.ajax({
+                url: '/Car/ModelGetir',
+                data: { MarkaKodu: MarkaKoduID },
+                //dataType: "Json",
+                //type: "post",
+                success: function (data) {
+                    console.log(data);
+                    //                     var options = '';
+                    //                     $.each(data, function () {
+                    //                         options += '<option value="' + this.TipKodu + '">' +
+                    //                             this.TipAdi + '</option>';
+                    //                     });
+                    //                     $("#ModelTipKodu").prop('disabled', false).html(options);
+                    //                     // $.each(data, function () {
+                    //                     //     $('#ModelTipKodu').append("<option value='" + this.TipKodu + "'>" + this.TipAdi + "</Option>")
+                    //                     // });
+                    //                     // $('#ModelTipKodu').empty();
+                    for (var i = 0; i < data.length; i++) {
+                        $('#ModelTipKodu').append("<option value='" + data[i].value + "'>" + data[i].text + "</Option>");
+                    }
+                }
+            });
+        });
+    });
+
+
+    $(function () {
+        $('#ModelTipKodu').change(function () {
+            var MarkaKoduID = $('#MarkaKodu').val();
+            var ModelTipKoduID = $('#ModelTipKodu').val();
+            $('#ModelYili').empty();
+            $('#ModelYili').append("<option value='" + "" + "'>" + "Model Yılı Seçiniz" + "</Option>");
+            $.ajax({
+                url: '/Car/ModelYilGetir',
+                data: { MarkaKodu: MarkaKoduID, TipKodu: ModelTipKoduID },
+                success: function (data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        $('#ModelYili').append("<option value='" + data[i].value + "'>" + data[i].text + "</Option>");
+                    }
+                }
+            });
+        });
+    });
+
+</script>

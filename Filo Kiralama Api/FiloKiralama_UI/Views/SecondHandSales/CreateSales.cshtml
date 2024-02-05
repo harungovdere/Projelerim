@@ -1,0 +1,58 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model FiloKiralama_UI.Dtos.SecondHandSalesDtos.CreateSecondHandSalesDto
+@{
+    ViewData["Title"] = "CreateSales";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<h1>İkinci El Satış</h1>
+
+<form method="post">
+    <label>Satışı Yapılacak Plaka</label>
+    <input type="text" class="form-control" asp-for="Plaka" value="@ViewBag.plaka" readonly />
+    <br />
+    <input type="hidden" asp-for="AracID" value="@ViewBag.aracID" class="form-control" />
+    <input type="hidden" asp-for="Durum" value="7" class="form-control" />
+    <span asp-validation-for="AracID"></span>
+
+    @* <div id="RadioArea">
+        Üye <input type="radio" name="rd" value="Uye" />
+        Üye Değil <input type="radio" name="rd" value="NotUye" />
+    </div> *@
+
+    <label id="LabelUye">Üye Seç</label>
+    @Html.DropDownListFor(x => x.KullaniciID, (List<SelectListItem>)ViewBag.Uyeler, "Üye Seçiniz", new { @class = "form-control", })
+    <span asp-validation-for="KullaniciID"></span>
+
+    <br />
+    <label>Satış Tarihi</label>
+    <input type="date" asp-for="SatisTarihi" class="form-control" />
+    <span asp-validation-for="SatisTarihi"></span>
+    <br />
+    <button class="btn btn-primary">Satışı Kaydet</button>
+
+</form>
+<script src="~/js/jquery-3.7.1.js"></script>
+
+<script type="text/javascript">
+    
+    // $(document).ready(function () {
+    //     $("#UyeID").hide()
+    //     $("#LabelUye").hide()
+    // })
+    // $("#RadioArea").change(function () {
+    //     var Deger = $("#RadioArea input[type='radio']:checked").val();
+    //     alert(Deger);
+    //     if (Deger == "Uye") {
+    //         $("#UyeID").show()
+    //         $("#LabelUye").show()
+    //     }
+    //     else {
+    //         $("#UyeID").hide()
+    //         $("#LabelUye").hide()
+    //     }
+    // });
+</script>

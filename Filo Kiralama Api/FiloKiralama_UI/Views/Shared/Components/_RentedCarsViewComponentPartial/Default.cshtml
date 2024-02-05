@@ -1,0 +1,85 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@using X.PagedList.Web.Common
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<FiloKiralama_UI.Dtos.MemberTransactionsDtos.ResultMemberTransactionsDto>
+
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<br />
+<div style="height:700px;">
+
+    <div style="text-align:center; ">
+        <h3 class="mb-4">Kiralanan Araç Listesi</h3>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Kullanıcı</th>
+                <th scope="col">Plaka</th>
+                <th scope="col">Marka</th>
+                <th scope="col">Model</th>
+                <th scope="col">Kira Başlangıç Tarihi</th>
+                <th scope="col">Kira Bitiş Tarihi</th>
+                <th scope="col">Teslim Etme Yeri</th>
+                <th scope="col">Teslim Etme Saati</th>
+                <th scope="col">Günlük Kira</th>
+                <th scope="col">Gün Sayısı</th>
+                <th scope="col">Tutar</th>
+                <th scope="col">Durum</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Kullanici</td>
+                    <td>@item.Plaka</td>
+                    <td>@item.MarkaAdi</td>
+                    <td>@item.TipAdi</td>
+                    <td>@(((DateTime)@item.KiraBaslangicTarihi).ToShortDateString())</td>
+                    <td>@(((DateTime)@item.KiraBitisTarihi).ToShortDateString())</td>
+                    <td>@item.TeslimEtmeKonumu</td>
+                    <td>@item.TeslimEtmeSaati</td>
+                    <td>@item.GunlukKira TL</td>
+                    <td>@item.ToplamGunSayisi</td>
+                    <td>@item.ToplamTutar TL</td>
+                    <td>@item.Durum</td>
+                    @* <td><a href="/CarImage/DeleteImage/@item.KullaniciID" onclick="return confirm('Silmek istiyor musunuz?')" class="btn btn-outline-danger">Sil</a></td> *@
+                    @* <td><a href="/Default/ReserveCancel/@item.RezerveID" class="btn btn-outline-danger">İptal Et</a></td> *@
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pull-right">
+        @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index",
+                 new
+                 {
+                     page
+
+                 }),
+                 new PagedListRenderOptions
+        {
+            LiElementClasses = new string[] { "page-item" },
+            PageClasses = new string[] { "page-link" },
+            Display = PagedListDisplayMode.IfNeeded
+
+        })
+    </div>
+</div>
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<script src="~/js/jquery-3.7.1.js"></script>
+
+<script>
+
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+
+</script>

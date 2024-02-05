@@ -1,0 +1,1317 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\READ-ME.txt",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\READ-ME.txt"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\about.html",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\about.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\booking.html",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\booking.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\car-rental-html-template.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\car-rental-html-template.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\car.html",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\car.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\contact.html",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\css\\style.css",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\detail.html",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\detail.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\about.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\about.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\banner-left.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\banner-left.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\banner-right.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\banner-right.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\bg-banner.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\bg-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\car-rent-1.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\car-rent-1.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\car-rent-2.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\car-rent-2.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\car-rent-3.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\car-rent-3.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\car-rent-4.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\car-rent-4.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\car-rent-5.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\car-rent-5.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\car-rent-6.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\car-rent-6.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\carousel-1.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\carousel-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\carousel-2.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\carousel-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\gallery-1.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\gallery-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\gallery-2.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\gallery-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\gallery-3.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\gallery-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\gallery-4.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\gallery-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\gallery-5.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\gallery-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\gallery-6.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\gallery-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\team-1.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\team-2.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\team-3.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\team-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\team-4.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\team-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\testimonial-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\testimonial-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\testimonial-3.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\testimonial-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\testimonial-4.jpg",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\testimonial-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\vendor-1.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\vendor-1.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\vendor-2.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\vendor-2.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\vendor-3.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\vendor-3.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\vendor-4.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\vendor-4.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\vendor-5.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\vendor-5.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\vendor-6.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\vendor-6.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\vendor-7.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\vendor-7.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\img\\vendor-8.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\img\\vendor-8.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\index.html",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\js\\main.js",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\tempusdominus\\js\\moment-timezone.min.js",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\tempusdominus\\js\\moment-timezone.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\tempusdominus\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\tempusdominus\\js\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_code.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_code.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_custom-forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_input-group.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_jumbotron.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_media.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_media.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_print.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_print.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_size.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_align.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_display.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_interactions.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_interactions.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_overflow.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_overflow.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\service.html",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\service.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\team.html",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\team.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\car-rental-html-template\\testimonial.html",
+      "PackagePath": "staticwebassets\\car-rental-html-template\\testimonial.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\css\\jquery-3.3.1min.js",
+      "PackagePath": "staticwebassets\\css\\jquery-3.3.1min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\404.html",
+      "PackagePath": "staticwebassets\\dashmin\\404.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\dashmin\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\READ-ME.txt",
+      "PackagePath": "staticwebassets\\dashmin\\READ-ME.txt"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\blank.html",
+      "PackagePath": "staticwebassets\\dashmin\\blank.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\bootstrap-admin-template-free.jpg",
+      "PackagePath": "staticwebassets\\dashmin\\bootstrap-admin-template-free.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\button.html",
+      "PackagePath": "staticwebassets\\dashmin\\button.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\chart.html",
+      "PackagePath": "staticwebassets\\dashmin\\chart.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\dashmin\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\css\\style.css",
+      "PackagePath": "staticwebassets\\dashmin\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\element.html",
+      "PackagePath": "staticwebassets\\dashmin\\element.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\form.html",
+      "PackagePath": "staticwebassets\\dashmin\\form.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\img\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\dashmin\\img\\testimonial-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\img\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\dashmin\\img\\testimonial-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\dashmin\\img\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\index.html",
+      "PackagePath": "staticwebassets\\dashmin\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\js\\main.js",
+      "PackagePath": "staticwebassets\\dashmin\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\chart\\chart.min.js",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\chart\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\tempusdominus\\js\\moment-timezone.min.js",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\tempusdominus\\js\\moment-timezone.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\tempusdominus\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\tempusdominus\\js\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\dashmin\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_accordion.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_accordion.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_containers.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_containers.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_helpers.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_helpers.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\forms\\_labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\forms\\_validation.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\helpers\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_container.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\utilities\\_api.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\dashmin\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\signin.html",
+      "PackagePath": "staticwebassets\\dashmin\\signin.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\signup.html",
+      "PackagePath": "staticwebassets\\dashmin\\signup.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\table.html",
+      "PackagePath": "staticwebassets\\dashmin\\table.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\typography.html",
+      "PackagePath": "staticwebassets\\dashmin\\typography.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\dashmin\\widget.html",
+      "PackagePath": "staticwebassets\\dashmin\\widget.html"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\js\\jquery-1.10.2.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-1.10.2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HARUN\\source\\repos\\FiloKiralama_Api\\FiloKiralama_UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FiloKiralama_UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.FiloKiralama_UI.props",
+      "PackagePath": "build\\FiloKiralama_UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.FiloKiralama_UI.props",
+      "PackagePath": "buildMultiTargeting\\FiloKiralama_UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.FiloKiralama_UI.props",
+      "PackagePath": "buildTransitive\\FiloKiralama_UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

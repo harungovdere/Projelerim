@@ -1,0 +1,184 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model FiloKiralama_UI.Dtos.SecondHandAppointmentDtos.CreateSecondHandAppointmentDto
+<!-- Detail Start -->
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<div>
+    <div>
+        @if (@ViewBag.dosyaAdi != null)
+        {
+            <div style="text-align:center"><img src="/Uploads/@ViewBag.dosyaAdi" /></div>
+        }
+        else
+        {
+            <div style="text-align:center"><img src="/Uploads/Görsel hazırlanmaktadır.png" /></div>
+        }
+        <div style="text-align:center"><h2>@ViewBag.markaAdi</h2></div>
+        <div style="text-align:center"><h3>@ViewBag.tipAdi</h3> </div>
+        <div style="text-align:center"><h3>Araç Numarası: @ViewBag.aracID</h3> </div>
+        @* <button id="test">testt</button> *@
+
+    </div>
+</div>
+<!-- Detail End -->
+<!-- Car Booking Start -->
+
+<div>
+    <div class="container">
+        <div style="text-align:center">
+            <div>
+
+                <h2>İletişim Bilgileriniz</h2>
+                <br />
+                @using (Html.BeginForm("SecondHandAppointment", "Default", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <input type="hidden" asp-for=AracID value="@ViewBag.aracID" class="form-control" />
+                    <input type="hidden" asp-for=KullaniciID value="@ViewBag.kullaniciID" class="form-control" />
+                    <div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label>Ad</label>
+                                <input type="text" asp-for=Ad value="@ViewBag.ad" class="form-control p-4" readonly>
+                                <span asp-validation-for="Ad"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label>Soyad</label>
+                                <input type="text" asp-for=Soyad value="@ViewBag.soyad" class="form-control p-4" readonly>
+                                <span asp-validation-for="Soyad"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label>E-Posta</label>
+                                <input type="email" asp-for=Email value="@ViewBag.mail" class="form-control p-4" readonly>
+                                <span asp-validation-for="Email"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label>Telefon</label>
+                                <input type="tel" asp-for=CepTel class="form-control p-4" value="@ViewBag.tel" readonly>
+                                @* <small>Format: 5XX XXX XXXX</small> *@
+                                <span asp-validation-for="CepTel"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="date" asp-for=RandevuTarihi class="form-control">
+                                <span asp-validation-for="RandevuTarihi"></span>
+
+                            </div>
+                            <div class="col-6 form-group">
+
+                                @Html.DropDownListFor(x => x.RandevuSaati, new SelectList(""), new { @class = "form-control" })
+                                <span asp-validation-for="RandevuSaati"></span>
+
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-block btn-primary py-3">Randevu Tamamla</button>
+
+                    </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+<script src="~/js/jquery-3.7.1.js"></script>
+<script>
+
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+    $(document).ready(function () {
+        $(function () {
+            if ('@ViewBag.mesaj' != '') {
+                var mesaj = "@Html.Raw(ViewBag.mesaj)";
+
+                alert(mesaj)
+                var url = '@Url.Action("Index", "Default")';
+                window.location.href = url;
+                // function foo(id) {
+                //     var url = '@Url.Action("Details", "Branch", new { id = "__id__" })';
+                //     window.location.href = url.replace('__id__', id);
+                // }
+            }
+        });
+    });
+    // $("#rezerve").click(function () {
+    //     $(function () {
+    //         $.ajax({
+    //             url: '/Default/Mesaj',
+    //             success: function (data) {
+    //                 console.log(data);
+    //                 if (data != "") {
+    //                     alert(data)
+    //                 }
+    //             }
+    //         });
+    //     });
+    // var error = "";
+
+    // if ($('#Ad-error').text() != "" || $('#Soyad-error').text() != "" || $('#Email-error').text() != "" || $('#CepTel-error').text() != "" || $('#TeslimAlmaKonumu-error').text() != ""
+    //     || $('#TeslimEtmeKonumu-error').text() != "" || $('#TeslimAlmaTarihi-error').text() != "" || $('#TeslimEtmeTarihi-error').text() != "" || $('#RandevuSaati-error').text()
+    //     || $('#TeslimEtmeSaati-error').text() != "" || $('#GunlukKira-error').text() != "" || $('#ToplamGunSayisi-error').text() != "" || $('#ToplamTutar-error').text() != "") {
+    //     error = "error"
+    // }
+
+    // if (error == "")
+    // {
+    //     alert("İşlem tamamlanmıştır. Rezervasyon detaylarınız mail adresinize gönderilmiştir")
+    // }
+    // })
+    function PlakaUcase(UpCstr) {
+        var UCStr = UpCstr.value;
+        UpCstr.value = UCStr.toUpperCase();
+    }
+
+    $(function () {
+        $('#RandevuTarihi').change(function () {
+            var randevuTarihi = $('#RandevuTarihi').val();
+            var tarih = new Date(Date.now())
+
+            var bugunTarihi = tarih.getFullYear() + "-" + (tarih.getMonth() + 1) + "-" + tarih.getDate();
+
+            //2023 - 12 - 31
+            if (new Date(randevuTarihi) < new Date(bugunTarihi)) {
+                alert("Tarih seçimi hatalı")
+
+            }
+
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+
+            $('#RandevuSaati').append("<option value='" + "" + "'>" + "Saat Seçiniz" + "</Option>");
+
+            var teksifir = "0";
+            var ciftsifir = "00";
+            for (var i = 9; i < 18; i++) {
+
+                if (i <= 9) {
+                    $('#RandevuSaati').append("<option value='" + teksifir + [i] + ":" + ciftsifir + "'>" + teksifir + [i] + ":" + ciftsifir + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + teksifir + [i] + ":" + 15 + "'>" + teksifir + [i] + ":" + 15 + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + teksifir + [i] + ":" + 30 + "'>" + teksifir + [i] + ":" + 30 + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + teksifir + [i] + ":" + 45 + "'>" + teksifir + [i] + ":" + 45 + "</Option>");
+
+                }
+                else {
+                    $('#RandevuSaati').append("<option value='" + [i] + ":" + ciftsifir + "'>" + [i] + ":" + ciftsifir + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + [i] + ":" + 15 + "'>" + [i] + ":" + 15 + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + [i] + ":" + 30 + "'>" + [i] + ":" + 30 + "</Option>");
+                    $('#RandevuSaati').append("<option value='" + [i] + ":" + 45 + "'>" + [i] + ":" + 45 + "</Option>");
+
+                }
+            }
+        });
+    });
+
+</script>

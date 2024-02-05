@@ -1,0 +1,191 @@
+﻿@using X.PagedList.Web.Common
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@*  @model IPagedList<FiloKiralama_UI.Dtos.CarStatusDtos.ResultTransactionsDto> *@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container-fluid pt-1 px-1">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Statü Değişimleri</h6>
+                <div>
+                    <form method="post">
+                        <div class="row">
+
+                            <div class="col-2 form-group">
+                                @* <label>Filo Teklif Tarihi</label> *@
+                                @* @Html.DropDownList("IslemTipleri", (List<SelectListItem>)ViewBag.islemler, "İşlem Seçiniz", new { @class = "form-control" }) *@
+                                <select id="IslemTipleri" class="form-control">
+                                    <option>İşlem Seçiniz</option>
+                                    <option value="2">İkinci El Statü Değiştir</option>
+                                    <option value="3">Günlük Kiralık Statü Değiştir</option>
+
+                                </select>
+                            </div>
+                            <div class="col-3 form-group">
+
+                                @using (Html.BeginForm("Index", "CarReturn", FormMethod.Post))
+                                {
+                                    <div>
+                                        <div style="float:left">
+                                            @Html.TextBox("ara", null, new
+                                                {
+                                                    @class = "form-control",
+                                                    @onkeyup = "AdUcase(this)",
+                                                    @placeholder = "Plaka giriniz"
+                                                })
+                                        </div>
+                                        <div style="float:left">
+                                            <input type="submit" class="btn btn-info" value="Ara" />
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <br />
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">AracID</th>
+                                <th scope="col">Plaka</th>
+                                <th scope="col">Marka</th>
+                                <th scope="col">Model</th>
+                                <th scope="col">Model Yılı</th>
+                                <th scope="col">KM</th>
+                                <th scope="col">Durum</th>
+                                <th scope="col">Dönüş Tarihi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.AracID</td>
+                                    <td>@item.Plaka</td>
+                                    <td>@item.MarkaAdi</td>
+                                    <td>@item.TipAdi</td>
+                                    <td>@item.ModelYili</td>
+                                    <td>@item.KM</td>
+                                    <td>@item.Durum</td>
+                                    <td>@(((DateTime)@item.DonusTarihi).ToShortDateString())</td>
+                                    <td>
+                                        <div class="ikinciEl">
+                                            @using (Html.BeginForm("UpdateStatu", "CarStatus", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                            {
+                                                <div>
+                                                    <div style="float:left">
+                                                        <input name="durum" type="hidden" value="5" />
+                                                        <input name="aracID" type="hidden" value="@item.AracID" />
+                                                    </div>
+
+                                                    <div style="float:left">
+                                                        <button type="submit" class="btn btn-outline-primary">İkinci El Yap</button>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                        <div class="kiralık">
+                                            @using (Html.BeginForm("UpdateStatu", "CarStatus", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                            {
+                                                <div>
+                                                    <div style="float:left">
+                                                        <input name="durum" type="hidden" value="4" />
+                                                        <input name="aracID" type="hidden" value="@item.AracID" />
+                                                    </div>
+
+                                                    <div style="float:left">
+                                                        <button type="submit" class="btn btn-outline-primary">Günlük Kiralık Yap</button>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </td>
+                                    @* <td><a href="/FleetOffer/CreateSendAnOffer/@item.FiloTalepID" class="btn btn-outline-danger">Teklif Gönder</a></td> *@
+                                    @* <td>@Html.ActionLink("Kapat", "CloseOffer", new { id = item.FiloTalepID }, new { @class = "btn btn-outline-danger", onclick = "return confirm('Talebi kapatmak istiyor musunuz?')" })</td> *@
+                                    @* <td><a href="/RentalCarRevision/UpdateRevision/@item.RevizeID" class="btn btn-outline-success">Güncelle</a></td> *@
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <div class="pull-right">
+                        @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index",
+                                 new
+                                 {
+                                     page
+
+                                 }),
+                                 new PagedListRenderOptions
+                        {
+                            LiElementClasses = new string[] { "page-item" },
+                            PageClasses = new string[] { "page-link" },
+                            Display = PagedListDisplayMode.IfNeeded
+
+                        })
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script src="~/js/jquery-3.7.1.js"></script>
+<script>
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+
+    $(document).ready(function () {
+        $(function () {
+
+            $('.ikinciEl').show();
+            $('.kiralık').hide();
+            // $("IslemTipleri select").val("1").change();
+            $('#IslemTipleri option[value=2]').attr('selected', 'selected');
+
+        });
+
+    });
+
+    function AdUcase(UpCstr) {
+        var UCStr = UpCstr.value;
+        UpCstr.value = UCStr.toUpperCase();
+    }
+
+    $(function () {
+        $('#IslemTipleri').change(function () {
+            var islemID = $('#IslemTipleri').val();
+
+            // $.ajax({
+            //     url: '/CarStatus/Index',
+            //     data: { islem: islemID },
+            //     success: function (data) {
+            //         console.log(data);
+            //     }
+            // });
+            if (islemID == 2) {
+                $('.ikinciEl').show();
+                $('.kiralık').hide();
+            }
+            else if (islemID == 3) {
+
+                $('.ikinciEl').hide();
+                $('.kiralık').show();
+            }
+
+        });
+    });
+
+</script>
+

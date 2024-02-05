@@ -1,0 +1,367 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FiloKiralama_UI
+build_property.RootNamespace = FiloKiralama_UI
+build_property.ProjectDir = C:\Users\HARUN\source\repos\FiloKiralama_Api\FiloKiralama_UI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\HARUN\source\repos\FiloKiralama_Api\FiloKiralama_UI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Admin/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/CarImage/CreateImage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FySW1hZ2VcQ3JlYXRlSW1hZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/CarImage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FySW1hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/CarImage/UpdateCarImage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FySW1hZ2VcVXBkYXRlQ2FySW1hZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/CarReturn/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUmV0dXJuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/CarStatus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyU3RhdHVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Car/CreateCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXENyZWF0ZUNhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Car/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Car/UpdateCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXFVwZGF0ZUNhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Car/_AllCarList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXF9BbGxDYXJMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/DailyRentalCars/CreateDailyRentalCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFpbHlSZW50YWxDYXJzXENyZWF0ZURhaWx5UmVudGFsQ2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/DailyRentalCars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFpbHlSZW50YWxDYXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/CarList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxDYXJMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/CarList2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxDYXJMaXN0Mi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/FleetRentalRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxGbGVldFJlbnRhbFJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/LongTerm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxMb25nVGVybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/MySecondHandAppointments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxNeVNlY29uZEhhbmRBcHBvaW50bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/PurchasedCars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxQdXJjaGFzZWRDYXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/RegisterMember.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxSZWdpc3Rlck1lbWJlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/RentCarDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxSZW50Q2FyRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/RentedCars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxSZW50ZWRDYXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/ReservationsForRentalCars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxSZXNlcnZhdGlvbnNGb3JSZW50YWxDYXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/SecondHandAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxTZWNvbmRIYW5kQXBwb2ludG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/Service.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxTZXJ2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Default/UserInformation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxVc2VySW5mb3JtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/FleetOffer/CreateSendAnOffer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxlZXRPZmZlclxDcmVhdGVTZW5kQW5PZmZlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/FleetOffer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxlZXRPZmZlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/FleetRentalRequest/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxlZXRSZW50YWxSZXF1ZXN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/FleetRental/CreateFleetRental.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxlZXRSZW50YWxcQ3JlYXRlRmxlZXRSZW50YWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/FleetRental/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxlZXRSZW50YWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Insurance/CreateInsurance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlXENyZWF0ZUluc3VyYW5jZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Insurance/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Insurance/UpdateInsurance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlXFVwZGF0ZUluc3VyYW5jZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/RentalCarPricing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsQ2FyUHJpY2luZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/RentalCarReserved/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsQ2FyUmVzZXJ2ZWRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/SecondHandAppointment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vjb25kSGFuZEFwcG9pbnRtZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/SecondHandAppointment/UpdateSecondHandAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vjb25kSGFuZEFwcG9pbnRtZW50XFVwZGF0ZVNlY29uZEhhbmRBcHBvaW50bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/SecondHandPricing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vjb25kSGFuZFByaWNpbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/SecondHandSales/CreateSales.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vjb25kSGFuZFNhbGVzXENyZWF0ZVNhbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/SecondHandSales/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vjb25kSGFuZFNhbGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/SecondHandSales/SecondHandCarsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vjb25kSGFuZFNhbGVzXFNlY29uZEhhbmRDYXJzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/SecondHandSales/SoldCarsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vjb25kSGFuZFNhbGVzXFNvbGRDYXJzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_AboutViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Fib3V0Vmlld0NvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_AdminLayoutFooterComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0Rm9vdGVyQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_AdminLayoutHeadComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0SGVhZENvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_AdminLayoutNavbarComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0TmF2YmFyQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_AdminLayoutScriptComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U2NyaXB0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_AdminLayoutSidebarComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U2lkZWJhckNvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_AdminLayoutSpinnerComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U3Bpbm5lckNvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_Carlist2ViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Nhcmxpc3QyVmlld0NvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_CarListViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Nhckxpc3RWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_ContactViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0NvbnRhY3RWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_FleetRentalRequestViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0ZsZWV0UmVudGFsUmVxdWVzdFZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_FooterViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Zvb3RlclZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_HeadViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0hlYWRWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_HomePageComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0hvbWVQYWdlQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_LoginViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0xvZ2luVmlld0NvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_LongTermViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0xvbmdUZXJtVmlld0NvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_MySecondHandAppointmentsViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX015U2Vjb25kSGFuZEFwcG9pbnRtZW50c1ZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_NavbarViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX05hdmJhclZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_PurchasedCarsViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1B1cmNoYXNlZENhcnNWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_RegisterMemberViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1JlZ2lzdGVyTWVtYmVyVmlld0NvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_RentCarDetailViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1JlbnRDYXJEZXRhaWxWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_RentedCarsViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1JlbnRlZENhcnNWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_ReservationsForRentalCarsViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1Jlc2VydmF0aW9uc0ZvclJlbnRhbENhcnNWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_ScriptViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1NjcmlwdFZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_SecondHandAppointmentViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1NlY29uZEhhbmRBcHBvaW50bWVudFZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_ServiceViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1NlcnZpY2VWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Components/_UserInformationViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VzZXJJbmZvcm1hdGlvblZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/_DefaultLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EZWZhdWx0TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Users/CreateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/Users/UpdateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXBkYXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARUN/source/repos/FiloKiralama_Api/FiloKiralama_UI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

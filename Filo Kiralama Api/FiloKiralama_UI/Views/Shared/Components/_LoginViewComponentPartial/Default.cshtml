@@ -1,0 +1,27 @@
+﻿@model FiloKiralama_UI.Dtos.UsersDtos.CreateUsersDto
+<br />
+<br />
+<div class="wrapper">
+    @using (Html.BeginForm("Login", "Default", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-signin" }))
+    {
+
+        <h2 class="form-signin-heading" style="text-align:center">Giriş Yapın</h2>
+        <input type="text" asp-for="Email" class="form-control" style="position: relative;font-size:16px;height:auto;padding:10px;" placeholder="Mail adresiniz" required="" autofocus="" />
+        <br />
+        <input type="password" asp-for="Sifre" class="form-control" style="position: relative;font-size:16px;height:auto;padding:10px;" placeholder="Şifreniz" required="" />
+        <br />
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Beni Hatırla
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Giriş Yap</button>
+        <br />
+        <br />
+        <div style="text-align:center">
+            <a href="/Default/RegisterMember">Üye Olmak İstiyorum</a>
+        </div>
+
+    }
+
+</div>
+<br />
+<br />

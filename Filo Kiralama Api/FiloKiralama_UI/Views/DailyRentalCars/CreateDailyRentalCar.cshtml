@@ -1,0 +1,144 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model FiloKiralama_UI.Dtos.DailyRentalCarsDtos.CreateDailyRentalCarsDto
+@{
+    ViewData["Title"] = "CreateDailyRentalCar";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<h2>Günlük Araç Kiralama</h2>
+
+<br />
+
+<h4>Rezervasyon Detayları</h4>
+<br />
+
+<div>
+
+    <div class="row">
+        <div class="col-3 form-group">
+            <label>Teslim Alma Konumu</label>
+            <input type="text" value="@ViewBag.tAlma" class="form-control " readonly>
+        </div>
+        <div class="col-2 form-group">
+            <label>Teslim Alma Tarihi</label>
+            <input type="text" value="@(((DateTime)@ViewBag.tAlmaTarih).ToShortDateString())" class="form-control " readonly>
+        </div>
+        <div class="col-2 form-group">
+            <label>Teslim Alma Saati</label>
+            <input type="text" value="@ViewBag.tAlmaSaati" class="form-control " readonly>
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="col-3 form-group">
+            <label>Teslim Etme Konumu</label>
+            <input type="text" value="@ViewBag.tEtme" class="form-control " readonly>
+        </div>
+        <div class="col-2 form-group">
+            <label>Teslim Etme Tarihi</label>
+            <input type="text" value="@(((DateTime)@ViewBag.tEtmeTarih).ToShortDateString())" class="form-control " readonly>
+        </div>
+        <div class="col-2 form-group">
+            <label>Teslim Etme Saati</label>
+            <input type="text" value="@ViewBag.tEtmeSaati" class="form-control " readonly>
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="col-2 form-group">
+            <label>Revize Tarihi</label>
+            <input type="text" value="@(((DateTime)@ViewBag.rezerveTarih).ToShortDateString())" class="form-control " readonly>
+        </div>
+        <div class="col-2 form-group">
+            <label>Ad</label>
+            <input type="text" value="@ViewBag.ad" class="form-control " readonly>
+        </div>
+        <div class="col-2 form-group">
+            <label>Soyad</label>
+            <input type="text" value="@ViewBag.soyad" class="form-control " readonly>
+        </div>
+        @*             <div class="col-2 form-group">
+        <label>E-Posta</label>
+        <input type="email" value="@ViewBag.mail" class="form-control " readonly>
+        </div>
+        <div class="col-2 form-group">
+        <label>Telefon</label>
+        <input type="tel" value="@ViewBag.tel" class="form-control " readonly>
+        </div> *@
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="col-2 form-group">
+            <label>Günlük Kira Tutarı</label>
+            <input type="text" value="@ViewBag.gunlukKira" class="form-control " readonly>
+        </div>
+        <div class="col-2 form-group">
+            <label>Toplam Gün Sayısı</label>
+            <input type="text" value="@ViewBag.toplamGun" class="form-control " readonly>
+        </div>
+        <div class="col-2 form-group">
+            <label>Toplam Kira Tutarı</label>
+            <input type="text" value="@ViewBag.toplamTutar" class="form-control " readonly>
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="col-2 form-group">
+            <label>Marka</label>
+            <input type="text" value="@ViewBag.markaAdi" class="form-control " readonly>
+        </div>
+        <div class="col-4 form-group">
+            <label>Model</label>
+            <input type="text" value="@ViewBag.tipAdi" class="form-control " readonly>
+        </div>
+        
+    </div>
+    <br />
+
+</div>
+
+<form method="post">
+    <label>Kiralanacak Araç Plakası</label>
+    @Html.DropDownListFor(x => x.Plaka, (List<SelectListItem>)ViewBag.plakalar, "Plaka Seçiniz", new { @class = "form-control" })
+       @*  Burada plaka değer olarak AracID tutmaktadır. *@
+    <span asp-validation-for="Plaka"></span>
+    <br />
+    <input type="hidden" asp-for="RezerveID" value="@ViewBag.rezerveID" class="form-control" />
+    <span asp-validation-for="RezerveID"></span>
+    <input type="hidden" asp-for="KullaniciID" value="@ViewBag.kullaniciID" class="form-control" />
+    <span asp-validation-for="KullaniciID"></span>
+    <input type="hidden" asp-for="KiraBaslangicTarihi" value="@(((DateTime)@ViewBag.tAlmaTarih).ToShortDateString())" class="form-control " readonly>
+    <input type="hidden" asp-for="KiraBitisTarihi" value="@(((DateTime)@ViewBag.tEtmeTarih).ToShortDateString())" class="form-control " readonly>
+    <input type="hidden" asp-for="Durum" value="3" class="form-control" />
+
+    <button type="submit" class="btn btn-primary">Aracı Kirala</button>
+
+</form>
+<script src="~/js/jquery-3.7.1.js"></script>
+
+<script type="text/javascript">
+
+    // $(document).ready(function () {
+    //     $("#UyeID").hide()
+    //     $("#LabelUye").hide()
+    // })
+    // $("#RadioArea").change(function () {
+    //     var Deger = $("#RadioArea input[type='radio']:checked").val();
+    //     alert(Deger);
+    //     if (Deger == "Uye") {
+    //         $("#UyeID").show()
+    //         $("#LabelUye").show()
+    //     }
+    //     else {
+    //         $("#UyeID").hide()
+    //         $("#LabelUye").hide()
+    //     }
+    // });
+</script>

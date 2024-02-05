@@ -1,0 +1,86 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@using X.PagedList.Web.Common
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<FiloKiralama_UI.Dtos.MemberTransactionsDtos.ResultMemberTransactionsDto>
+
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<br />
+<div style="height:700px;">
+
+    <div style="text-align:center; ">
+        <h3 class="mb-4">İkinci El Randevu Listesi</h3>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">RandevuID</th>
+                <th scope="col">Randevu Talep Tarihi</th>
+                <th scope="col">Randevu Sahibi</th>
+                <th scope="col">Araç No</th>
+                <th scope="col">Marka</th>
+                <th scope="col">Model</th>
+                <th scope="col">Model Yılı</th>
+                <th scope="col">Randevu Tarihi</th>
+                <th scope="col">Randevu Saati</th>
+                <th scope="col">İptal</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.RandevuID</td>
+                    <td>@(((DateTime)@item.RandevuTalepTarihi).ToShortDateString())</td>
+                    <td>@item.RandevuSahibi</td>
+                    <td>@item.AracID</td>
+                    <td>@item.MarkaAdi</td>
+                    <td>@item.TipAdi</td>
+                    <td>@item.ModelYili</td>
+                    <td>@(((DateTime)@item.RandevuTarihi).ToShortDateString())</td>
+                    <td>@item.RandevuSaati</td>
+                    <td><a href="/Default/AppointmentCancel/@item.RandevuID" onclick="return confirm('Randevu iptal etmek istiyor musunuz?')" class="btn btn-outline-danger">İptal Et</a></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pull-right">
+        @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index",
+                 new
+                 {
+                     page
+
+                 }),
+                 new PagedListRenderOptions
+        {
+            LiElementClasses = new string[] { "page-item" },
+            PageClasses = new string[] { "page-link" },
+            Display = PagedListDisplayMode.IfNeeded
+
+        })
+    </div>
+</div>
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<script src="~/js/jquery-3.7.1.js"></script>
+
+<script>
+
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+
+    $(document).ready(function () {
+
+        if ('@ViewBag.msj' != "") {
+            alert('@ViewBag.msj')
+        }
+    });
+
+</script>

@@ -1,0 +1,221 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model FiloKiralama_UI.Dtos.FleetRentalRequestDtos.CreateFleetRentalRequestDto
+<!-- Filo Start -->
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<div>
+    <div>
+        @* <div style="text-align:center"><img src="/Uploads/@ViewBag.dosyaAdi" /></div>
+        <div style="text-align:center"><h2>@ViewBag.markaAdi</h2></div>
+        <div style="text-align:center"><h3>@ViewBag.tipAdi</h3> </div>
+        <div style="text-align:center"><h3>Araç Numarası: @ViewBag.aracID</h3> </div> *@
+        @* <button id="test">testt</button> *@
+
+    </div>
+</div>
+<!-- Detail End -->
+<!-- Car Booking Start -->
+
+<div>
+    <div class="container">
+        <div style="text-align:center">
+            <div>
+                @using (Html.BeginForm("FleetRentalRequest", "Default", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+
+                    <h2>Şirket Bilgileriniz</h2>
+                    <div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <select asp-for=MusteriTipi class="custom-select px-4" placeholder="Şirket tipi seçiniz" style="height: 50px;">
+                                    <option value="">Şirket tipi seçiniz</option>
+                                    <option value="Şahıs Şirketi">Şahıs Şirketi</option>
+                                    <option value="Ticari Şirket">Ticari Şirket</option>
+                                </select>
+                                <span asp-validation-for="MusteriTipi"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="text" asp-for=FirmaUnvani onkeyup="PlakaUcase(this)" class="form-control p-4" placeholder="Firma Unvanı">
+                                <span asp-validation-for="FirmaUnvani"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="text" asp-for=VergiDairesi onkeyup="PlakaUcase(this)" class="form-control p-4" placeholder="Vergi Dairesi">
+                                <span asp-validation-for="VergiDairesi"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="text" asp-for=VergiNoKimlikNo class="form-control p-4" placeholder="Vergi No/Kimlik No">
+                                <span asp-validation-for="VergiNoKimlikNo"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="email" asp-for=EPosta class="form-control p-4" placeholder="E-Posta adresiniz">
+                                <span asp-validation-for="EPosta"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="tel" asp-for=Telefon class="form-control p-4" placeholder="Telefon numaranız" pattern="[0-9]{3} [0-9]{3} [0-9]{2}[0-9]{2}">
+                                @* <input type="tel" asp-for=Telefon class="form-control p-4" placeholder="Telefon numaranız"> *@
+                                <small>Format: 5XX XXX XXXX</small>
+                                <span asp-validation-for="Telefon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Kiralamayı Düşündüğünüz Araç Bilgileriniz</h2>
+                    <div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+
+                                @Html.DropDownListFor(x => x.MarkaKodu, new SelectList(""), new { @class = "form-control" })
+                                <span asp-validation-for="MarkaKodu"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                @Html.DropDownListFor(x => x.TipKodu, new SelectList(""), new { @class = "form-control" })
+                                <span asp-validation-for="TipKodu"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <select asp-for=KiralamaSuresi class="custom-select px-4" placeholder="Kiralama süresi seçiniz" style="height: 50px;">
+                                    @* <option selected>Teslim Etme Konumu</option> *@
+                                    <option value="">Kiralama süresi seçiniz</option>
+                                    <option value="12">12 Ay</option>
+                                    <option value="24">24 Ay</option>
+                                    <option value="36">36 Ay</option>
+                                </select>
+                                <span asp-validation-for="KiralamaSuresi"></span>
+
+                            </div>
+                            <div class="col-6 form-group">
+                                <select asp-for=YillikKM class="custom-select px-4" placeholder="Yıllık öngörülen KM seçiniz" style="height: 50px;">
+                                    @* <option selected>Teslim Etme Konumu</option> *@
+                                    <option value="">Yıllık öngörülen KM seçiniz</option>
+                                    <option value="15000">15.000</option>
+                                    <option value="20000">20.000</option>
+                                    <option value="25000">25.000</option>
+                                    <option value="30000">30.000</option>
+                                    <option value="35000">35.000</option>
+                                    <option value="40000">40.000</option>
+                                    <option value="45000">45.000</option>
+                                    <option value="50000">50.000</option>
+                                </select>
+                                <span asp-validation-for="YillikKM"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="number" asp-for=MevcutAracAdedi class="form-control p-4" placeholder="Mevcut araç adedi giriniz">
+                                <span asp-validation-for="MevcutAracAdedi"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="number" asp-for=TalepEdilenAracAdedi class="form-control p-4" placeholder="Talep edilen araç adedi giriniz">
+                                <span asp-validation-for="TalepEdilenAracAdedi"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="rezerve" type="submit" class="btn btn-block btn-primary py-3">Gönder</button>
+
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<script src="~/js/jquery-3.7.1.js"></script>
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
+<script>
+
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+    $("#rezerve").click(function () {
+        if ($('#MevcutAracAdedi').val() == "") {
+            $('#MevcutAracAdedi').val(0)
+        }
+    })
+
+    var $j = jQuery.noConflict();
+    $j(document).ready(function () {
+        $j("#Telefon").inputmask({
+            mask: "(999) 999-9999"
+        });
+        
+    });
+    $('#MusteriTipi').change(function () {
+        var tip = $('#MusteriTipi').val()
+
+        if (tip == 'Şahıs Şirketi') {
+            $j('#VergiNoKimlikNo').inputmask('99999999999');
+        }
+        else{
+            $j('#VergiNoKimlikNo').inputmask('999999');
+        }
+    })
+
+    // $("#MusteriTipi").change(function () {
+    //     var kontrol = $("#MusteriTipi").val();
+    //     $('#Kontrol').val(kontrol)
+    //     alert(kontrol)
+    // })
+
+    $(document).ready(function () {
+        $(function () {
+            $.ajax({
+                url: '/Default/MarkaGetir',
+                success: function (data) {
+                    console.log(data);
+                    $('#MarkaKodu').append("<option value='" + "" + "'>" + "Marka Seçiniz" + "</Option>");
+                    $('#TipKodu').append("<option value='" + "" + "'>" + "Model Seçiniz" + "</Option>");
+
+                    for (var i = 0; i < data.length; i++) {
+                        $('#MarkaKodu').append("<option value='" + data[i].value + "'>" + data[i].text + "</Option>");
+                    }
+                }
+            });
+        });
+    });
+
+    $(function () {
+        $('#MarkaKodu').change(function () {
+            var MarkaKoduID = $('#MarkaKodu').val();
+            $('#TipKodu').empty();
+            $('#TipKodu').append("<option value='" + "" + "'>" + "Model Seçiniz" + "</Option>");
+            $.ajax({
+                url: '/Default/ModelGetir',
+                data: { MarkaKodu: MarkaKoduID },
+                success: function (data) {
+                    console.log(data);
+
+                    for (var i = 0; i < data.length; i++) {
+                        $('#TipKodu').append("<option value='" + data[i].value + "'>" + data[i].text + "</Option>");
+                    }
+                }
+            });
+        });
+    });
+
+    $(document).ready(function () {
+        $(function () {
+            if ('@ViewBag.mesaj' != '') {
+                var mesaj = "@Html.Raw(ViewBag.mesaj)";
+
+                alert(mesaj)
+                var url = '@Url.Action("Index", "Default")';
+                window.location.href = url;
+            }
+        });
+    });
+
+    function PlakaUcase(UpCstr) {
+        var UCStr = UpCstr.value;
+        UpCstr.value = UCStr.toUpperCase();
+    }
+
+
+</script>

@@ -1,0 +1,162 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model FiloKiralama_UI.Dtos.FleetOfferDtos.CreateSendAnOfferDto
+
+@{
+    ViewData["Title"] = "CreateSendAnOffer";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<h2>Filo Kiralama Teklif Gönderme</h2>
+
+<br />
+
+<h4>Filo Talep Detayları</h4>
+<br />
+
+<div>
+    <form method="post">
+        <div class="row">
+
+            <div class="col-2 form-group">
+                <label>Filo Talep Tarihi</label>
+                <input type="text" asp-for=TalepTarihi value="@(((DateTime)@ViewBag.talepTarih).ToShortDateString())" class="form-control " readonly>
+            </div>
+            <div class="col-3 form-group">
+                <label>Firma Unvanı</label>
+                <input type="text" asp-for=FirmaUnvani value="@ViewBag.firma" class="form-control " readonly>
+            </div>
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-2 form-group">
+                <label>Marka</label>
+                <input type="text" asp-for=Marka value="@ViewBag.marka" class="form-control " readonly>
+            </div>
+            <div class="col-3 form-group">
+                <label>Model</label>
+                <input type="text" asp-for=Model value="@ViewBag.model" class="form-control " readonly>
+            </div>
+
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-2 form-group">
+                <label>Yıllık KM</label>
+                <input type="text" asp-for=YillikKM value="@ViewBag.km" class="form-control " readonly>
+            </div>
+            <div class="col-2 form-group">
+                <label>Kiralama Süresi</label>
+                <input type="text" asp-for=KiralamaSuresi value="@ViewBag.sure" class="form-control " readonly>
+            </div>
+
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-2 form-group">
+                <label>Mevcut Araç Adedi</label>
+                <input type="text" asp-for=MevcutArac value="@ViewBag.mevcutArac" class="form-control " readonly>
+            </div>
+            <div class="col-2 form-group">
+                <label>Talep Edilen Araç Adedi</label>
+                <input type="text" asp-for=TalepArac value="@ViewBag.talepArac" class="form-control " readonly>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-2 form-group">
+                <label>Aylık Kira Fiyatı</label>
+                <input type="text" asp-for="AylikKiraFiyati" class="form-control" />
+                @* <small>Format: 5XX XXX XXXX</small> *@
+                <span asp-validation-for="AylikKiraFiyati"></span>
+            </div>
+            <div class="col-2 form-group">
+                <label>Yıllık Kira Fiyatı</label>
+                <input type="text" asp-for="YillikKiraFiyati" class="form-control" readonly />
+                <span asp-validation-for="YillikKiraFiyati"></span>
+            </div>
+            <div class="col-2 form-group">
+                <br />
+
+                <button type="button" id="hesapla" class="btn btn-primary">Hesapla</button>
+            </div>
+            <br />
+
+            <input type="hidden" asp-for="FiloTalepID" value="@ViewBag.talepID" class="form-control" />
+            <span asp-validation-for="FiloTalepID"></span>
+            <input type="hidden" asp-for="Email" value="@ViewBag.mail" class="form-control" />
+            <span asp-validation-for="Email"></span>
+
+        </div>
+        <br />
+
+        <button type="submit" class="btn btn-primary">Teklif Gönder</button>
+    </form>
+</div>
+
+<script src="~/js/jquery-3.7.1.js"></script>
+@* <script src="~/js/jquery.mask.js"></script> *@
+
+@* <script type='text/javascript' src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script> *@
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
+<script type="text/javascript">
+   
+    var $j = jQuery.noConflict();
+    $j(document).ready(function () {
+        
+        $j('#AylikKiraFiyati').inputmask('99.999', { reverse: true });
+        
+    });
+    // var $j = jQuery.noConflict();
+    // $j(document).ready(function () {
+    //     $j("#customerPhoneInput").inputmask({
+    //         mask: "(999) 999-9999",
+    //         placeholder: "_"
+    //     });
+    // });
+    $("#hesapla").click(function () {
+        var aylikKira = $('#AylikKiraFiyati').val();
+        var yillikKira = 0;
+        // aylikKira = aylikKira.replace(",", ".");
+
+        if (aylikKira != "") {
+            yillikKira = Number(aylikKira) * (1000*12);
+            
+            if (yillikKira <= 99999) {
+                $j('#YillikKiraFiyati').inputmask('99.999', { reverse: true });
+                $('#YillikKiraFiyati').val(yillikKira)
+            }
+            else if (yillikKira <= 999999) {
+                $j('#YillikKiraFiyati').inputmask('999.999', { reverse: true });
+                $('#YillikKiraFiyati').val(yillikKira)
+            }
+            else { 
+                $j('#YillikKiraFiyati').inputmask('9.999.999', { reverse: true });
+                $('#YillikKiraFiyati').val(yillikKira)
+            }
+        }
+    })
+    // $(document).ready(function () {
+    //     $("#UyeID").hide()
+    //     $("#LabelUye").hide()
+    // })
+    // $("#RadioArea").change(function () {
+    //     var Deger = $("#RadioArea input[type='radio']:checked").val();
+    //     alert(Deger);
+    //     if (Deger == "Uye") {
+    //         $("#UyeID").show()
+    //         $("#LabelUye").show()
+    //     }
+    //     else {
+    //         $("#UyeID").hide()
+    //         $("#LabelUye").hide()
+    //     }
+    // });
+</script>
+

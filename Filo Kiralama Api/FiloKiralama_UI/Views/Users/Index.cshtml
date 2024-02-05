@@ -1,0 +1,113 @@
+﻿@using X.PagedList.Web.Common
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<FiloKiralama_UI.Dtos.UsersDtos.ResultUsersDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container-fluid pt-1 px-1">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Kullanıcıların Listesi</h6>
+                <div class="table-responsive">
+                    <div>
+                        <form method="post">
+                            <div class="row">
+                                <div class="col-3 form-group">
+
+                                    @using (Html.BeginForm("Index", "CarReturn", FormMethod.Post))
+                                    {
+                                        <div>
+                                            <div style="float:left">
+                                                @Html.TextBox("ara", null, new
+                                                    {
+                                                        @class = "form-control",
+                                                        @onkeyup = "AdUcase(this)",
+                                                        @placeholder = "Kullanıcı adı giriniz"
+                                                    })
+                                            </div>
+                                            <div style="float:left">
+                                                <input type="submit" class="btn btn-info" value="Ara" />
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">KullanıcıID</th>
+                                <th scope="col">Kimlik No</th>
+                                <th scope="col">Adı</th>
+                                <th scope="col">Soyadı</th>
+                                <th scope="col">Doğum Tarihi</th>
+                                <th scope="col">Cinsiyet</th>
+                                <th scope="col">E-posta</th>
+                                <th scope="col">Telefon</th>
+                                <th scope="col">Rol</th>
+                                <th scope="col">Güncelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.KullaniciID</td>
+                                    <td>@item.TC</td>
+                                    <td>@item.Ad</td>
+                                    <td>@item.Soyad</td>
+                                    <td>@(((DateTime)@item.DogumTarihi).ToShortDateString())</td>
+                                    <td>@item.Cinsiyet</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.CepTel</td>
+                                    <td>@item.Role</td>
+                                    @* <td><a href="/CarImage/DeleteImage/@item.KullaniciID" onclick="return confirm('Silmek istiyor musunuz?')" class="btn btn-outline-danger">Sil</a></td> *@
+                                    <td><a href="/Users/UpdateUser/@item.KullaniciID" class="btn btn-outline-primary">Güncelle</a></td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <div class="pull-right">
+                        @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index",
+                                 new
+                                 {
+                                     page
+
+                                 }),
+                                 new PagedListRenderOptions
+                        {
+                            LiElementClasses = new string[] { "page-item" },
+                            PageClasses = new string[] { "page-link" },
+                            Display = PagedListDisplayMode.IfNeeded
+
+                        })
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script src="~/js/jquery-3.7.1.js"></script>
+
+<script>
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+
+    function AdUcase(UpCstr) {
+        var UCStr = UpCstr.value;
+        UpCstr.value = UCStr.toUpperCase();
+    }
+
+</script>

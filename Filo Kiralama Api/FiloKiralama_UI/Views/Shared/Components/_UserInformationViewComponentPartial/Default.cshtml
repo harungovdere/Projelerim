@@ -1,0 +1,188 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model FiloKiralama_UI.Dtos.UsersDtos.UpdateUsersDto
+
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<div>
+    <div class="container" style="width:600px;">
+        <div style="text-align:center; ">
+            <div>
+                @using (Html.BeginForm("UserInformation", "Default", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+
+                    <h2>Profil Bilgilerim</h2>
+                    <div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                @* <input type="hidden" asp-for="KullaniciID" class="form-control" /> *@
+                                <label>Kimlik No</label>
+                                <input type="text" asp-for="TC" class="form-control" />
+                                <span asp-validation-for="TC"></span>
+                                @if (ViewBag.tc != "" || ViewBag.tc != null)
+                                {
+                                    <span>@ViewBag.tc</span>
+                                }
+                            </div>
+                            <div class="col-6 form-group">
+                                <label>Üye No</label>
+                                <input type="text" asp-for="KullaniciID" class="form-control" readonly />
+                                <span asp-validation-for="KullaniciID"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label>Ad</label>
+                                <input type="text" asp-for="Ad" onkeyup="PlakaUcase(this)" placeholder="Adınız" class="form-control" />
+                                <span asp-validation-for="Ad"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label>Soyad</label>
+                                <input type="text" asp-for="Soyad" onkeyup="PlakaUcase(this)" placeholder="Soyadınız" class="form-control" />
+                                <span asp-validation-for="Soyad"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label>Doğum Tarihi</label>
+                                <input type="date" asp-for="DogumTarihi" class="form-control" />
+                                <span asp-validation-for="DogumTarihi"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label>Cinsiyet</label>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="erkek" class="radio-inline">Erkek</label>
+                                        <input type="radio" asp-for="Cinsiyet" id="erkek" value="ERKEK">
+                                        @* Erkek @Html.RadioButton("Cinsiyet","ERKEK",new { @class = "form-control",@onclick="CheckSelected()",@value="ERKEK" }) *@
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="kadin" class="radio-inline">Kadın</label>
+                                        @* Kadın @Html.RadioButton("Cinsiyet", "KADIN", new { @class = "form-control", @onclick = "CheckSelected()",@value = "KADIN" }) *@
+                                        <input type="radio" asp-for="Cinsiyet" id="kadin" value="KADIN">
+                                    </div>
+                                </div>
+                                <span asp-validation-for="Cinsiyet"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label>Ehliyet No</label>
+                                <input type="text" asp-for="EhliyetNo" placeholder="Ehliyet numranız" class="form-control">
+                                <span asp-validation-for="EhliyetNo"></span>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label>Ehliyet Sınıfı</label>
+                                @Html.DropDownListFor(x => x.EhliyetSinifi, new SelectListItem[]{
+                            new SelectListItem() {Text = "B", Value = "B" },
+                            new SelectListItem() { Text = "C", Value = "C" },
+                            new SelectListItem() { Text = "D", Value = "D" },
+                            new SelectListItem() { Text = "E", Value = "E" },
+                                                },
+                                         "Ehliyet Seçiniz", new { @class = "form-control" })
+                                <span asp-validation-for="EhliyetSinifi"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label>E-Posta</label>
+                                <input type="email" asp-for="Email" placeholder="Mail adresiniz" class="form-control">
+                                <span asp-validation-for="Email"></span>
+                                @if (ViewBag.msg != "" || ViewBag.msg != null)
+                                {
+                                    <span>@ViewBag.msg</span>
+                                }
+                            </div>
+                            <div class="col-6 form-group">
+                                <label>Telefon</label>
+                                <input type="text" asp-for="CepTel" placeholder="Telefon numaranız" class="form-control">
+                                <span asp-validation-for="CepTel"></span>
+                            </div>
+                        </div>
+                        @*  <div class="row">
+                    <div class="col-6 form-group">
+                    <label>Şifre</label>
+                    <input type="password" asp-for="Sifre" placeholder="Şifreniz" class="form-control">
+                    <span asp-validation-for="Sifre"></span>
+                    </div>
+                    <div class="col-6 form-group">
+                    <label>Şifre Tekrar</label>
+                    <input type="password" asp-for="Sifre2" placeholder="Şifreniz" class="form-control">
+                    <span asp-validation-for="Sifre2"></span>
+                    </div>
+                    </div> *@
+                    </div>
+                    <button type="submit" class="btn btn-block btn-primary py-3">Bilgilerimi Kaydet</button>
+
+                }
+                <br />
+                <button href="#demo" id="sifreDegistir" data-toggle="collapse" class="btn btn-block btn-primary py-3">Şifreyi Değiştirme İşlemi</button>
+                @* <a href="#demo" class="btn btn-info py-3" data-toggle="collapse">Şifreyi Değiştir</a> *@
+                <div id="demo" class="collapse">
+                    @using (Html.BeginForm("UpdateUserPassword", "Default", FormMethod.Post))
+                    {
+                        <div class="row">
+                            <div class="col-11 form-group">
+                                <br />
+                                <label>Eski Şifre</label>
+                                <input type="password" asp-for="EskiSifre" placeholder="Eski şifreni gir" class="form-control" />
+                                <span>@ViewBag.eskiSifre</span>
+                                <span>@ViewBag.sifre</span>
+                                <br />
+                                <label>Yeni Şifre</label>
+                                <input type="password" asp-for="YeniSifre" placeholder="Yeni şifreni gir" class="form-control" />
+                                <span>@ViewBag.yeniSifre</span>
+                                <br />
+                                <label>Yeni Şifre (Tekrar)</label>
+                                <input type="password" asp-for="YeniSifreTekrar" placeholder="Yeni şifreni tekrar gir" class="form-control" />
+                                <span>@ViewBag.yeniSifreTekrar</span>
+                                <span>@ViewBag.yeniSifreTekrar2</span>
+                                <br />
+                            </div>
+                            <button type="submit" id="kaydet" class="btn btn-block btn-primary py-3">Şifre Kaydet</button>
+
+                        </div>
+                    }
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<script src="~/js/jquery-3.7.1.js"></script>
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
+<script>
+
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+
+    var $j = jQuery.noConflict();
+    $j(document).ready(function () {
+        if ('@ViewBag.eskiSifre' != "" || '@ViewBag.yeniSifre' != "" || '@ViewBag.yeniSifreTekrar' != "" || '@ViewBag.sifre' != "" || '@ViewBag.yeniSifreTekrar2' != "") {
+            $("#sifreDegistir").trigger("click")
+        }
+
+        if ('@ViewBag.msj' != "") {
+            alert('@ViewBag.msj')
+        }
+
+        $j("#CepTel").inputmask({
+            mask: "(999) 999-9999"
+        });
+        $j('#TC').inputmask('99999999999');
+        $j('#EhliyetNo').inputmask('999999');
+    });
+
+    function PlakaUcase(UpCstr) {
+        var UCStr = UpCstr.value;
+        UpCstr.value = UCStr.toUpperCase();
+    }
+
+</script>

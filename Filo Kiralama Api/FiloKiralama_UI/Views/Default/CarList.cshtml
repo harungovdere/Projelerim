@@ -1,0 +1,35 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<html lang="tr">
+
+<head>
+    @await Component.InvokeAsync("_HeadViewComponentPartial")
+</head>
+
+<body>
+
+    <!-- Topbar Start -->
+    <!-- Navbar Start -->
+    @await Component.InvokeAsync("_NavbarViewComponentPartial")
+    <!-- Topbar End -->
+    <!-- Navbar End -->
+    <!-- Rent a car Start -->
+    @await Component.InvokeAsync("_CarListViewComponentPartial")
+    <!-- Rent a car End -->
+    <!-- Footer Start -->
+    @await Component.InvokeAsync("_FooterViewComponentPartial")
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    @await Component.InvokeAsync("_ScriptViewComponentPartial")
+</body>
+
+</html>
+

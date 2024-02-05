@@ -1,0 +1,78 @@
+﻿@using X.PagedList.Web.Common
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<FiloKiralama_UI.Dtos.CarStatusDtos.ResultTransactionsDto>
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="display-4 text-uppercase text-center mb-5">Kiralık Araçlar</h1>
+      @*   @using (Html.BeginForm("RentCarDetail", "Default", FormMethod.Post))
+        {
+        } *@
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 col-md-6 mb-2">
+                        <div class="rent-item mb-4">
+                            @if (item.DosyaAdi != null)
+                            {
+                                <img class="img-fluid mb-4" src="/Uploads/@item.DosyaAdi" alt="">
+                            }
+                            else
+                            {
+                                <img class="img-fluid mb-4" src="/Uploads/Görsel hazırlanmaktadır.png" alt="">
+                            }
+
+                            <h4 class="text-uppercase mb-4">@item.MarkaAdi</h4>
+                            <h6 class="text-uppercase mb-4">@item.TipAdi</h6>
+                            @* <input type="hidden" asp-for="@item.TipKodu" class="form-control" />
+                            <input type="hidden" asp-for="@item.MarkaKodu" class="form-control" />
+                            <input type="hidden" asp-for="@item.DosyaAdi" class="form-control" /> *@
+
+                            <div class="d-flex justify-content-center mb-4">
+                                <div class="px-2 border-left border-right">
+                                    <i class="fa fa-cogs text-primary mr-1"></i>
+                                    <span>@item.Sanziman</span>
+                                </div>
+                                @* <div class="px-2">
+                        <i class="fa fa-road text-primary mr-1"></i>
+                        <span>@item.KM K</span>
+                        </div> *@
+                                <div class="px-2 border-left border-right">
+                                    <i class="fas fa-gas-pump text-primary mr-1"></i>
+                                    <span>@item.YakitTipi</span>
+                                </div>
+                            </div>
+                            <h6 class="text-uppercase mb-4">Günlük:@item.GunlukKiraFiyat TL</h6>
+
+                            <a type="submit" class="btn btn-primary px-3" href="/default/RentCarDetail/@item.ModelTipID">Kirala</a>
+
+                        </div>
+                    </div>
+                }
+
+            </div>
+        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="pull-right">
+                    @Html.PagedListPager((IPagedList)Model, page => Url.Action("CarList",
+                             new
+                             {
+                                 page
+
+                             }),
+                             new PagedListRenderOptions
+                    {
+                        LiElementClasses = new string[] { "page-item" },
+                        PageClasses = new string[] { "page-link" },
+                        Display = PagedListDisplayMode.IfNeeded
+
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

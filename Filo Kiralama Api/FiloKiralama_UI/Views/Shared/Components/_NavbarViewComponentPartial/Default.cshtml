@@ -1,0 +1,118 @@
+﻿@* @using Microsoft.AspNetCore.Identity
+@inject SignInManager<ResultMemberDto> SignInManager
+@inject UserManager<ResultMemberDto> UManager *@
+@* @inject RoleManager<IdentityRole> RoleManager *@
+@using System.Security.Claims;
+@using Microsoft.AspNetCore.Authentication.Cookies;
+<!-- Topbar Start -->
+<div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+    <div class="row">
+        <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</a>
+                <span class="text-body">|</span>
+                <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>info@example.com</a>
+            </div>
+        </div>
+        <div class="col-md-5 text-center text-lg-right">
+            <div class="d-inline-flex align-items-center">
+                @if (ViewBag.usd != null)
+                {
+                    <a class="text-body px-2">
+                        DOLAR: @ViewBag.usd
+                    </a>
+                    <a class="text-body px-2">
+                        EURO: @ViewBag.eur
+                    </a>
+                    <a class="text-body px-2">
+                        STERLİN: @ViewBag.gbp
+                    </a>
+                    <a class="text-body px-2">
+
+                    </a>
+                    <a class="text-body px-2">
+
+                    </a> 
+                    <a class="text-body px-2">
+
+                    </a>
+                }
+                @* @ClaimsIdentity identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme); *@
+                @* @if (SignInManager.IsSignedIn(User))
+                {
+                var girisYapanKullanici = await UManager.GetUserAsync(User);
+                var kullanicininTanımlandigiRol = await UManager.GetRolesAsync(girisYapanKullanici);
+
+                <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+
+                <span class="d-none d-lg-inline-flex">@girisYapanKullanici.Ad</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                <a href="#" class="dropdown-item">Bilgilerim</a>
+                <a href="/Default/LogOut" class="dropdown-item">Çıkış</a>
+                </div>
+                </div>
+
+                } *@
+
+                @if (@User.Identity.Name != null)
+                {
+                    <div class="dropdown show">
+                        <a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @User.Identity.Name
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a href="/Default/UserInformation" class="dropdown-item">Bilgilerim</a>
+                            <a href="/Default/ReservationsForRentalCars" class="dropdown-item">Kiralık Araç Rezerveler</a>
+                            <a href="/Default/RentedCars" class="dropdown-item">Kiralanan Araçlar</a>
+                            <a href="/Default/MySecondHandAppointments" class="dropdown-item">İkinci El Randevular</a>
+                            <a href="/Default/PurchasedCars" class="dropdown-item">Satın Alınan Araçlar</a>
+                            <a href="/Default/LogOut" class="dropdown-item">Çıkış</a>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <a href="/Default/Login" class="nav-item nav-link">Üye Girişi</a>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+<!-- Navbar Start -->
+
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="position-relative px-lg-5" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+            <a href="/default/index" class="navbar-brand">
+                <h3 class="text text-primary mb-1">Royal Cars</h3>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-1" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    @if (@User.Identity.Name != null)
+                    {
+                        if (User.Claims.Where(x => x.Type == ClaimTypes.Role).FirstOrDefault().Value =="Admin")
+                        {
+                            <a href="/Admin/Home" class="nav-item nav-link">Admin</a>
+                        }
+                    }
+                    <a href="/default/Index" class="nav-item nav-link">Ana Sayfa</a>
+                    <a href="/default/about" class="nav-item nav-link">Hakkımızda</a>
+                    <a href="/default/carlist" class="nav-item nav-link">Kiralık Araçlar</a>
+                    <a href="/default/carlist2" class="nav-item nav-link">İkinci El Araçlar</a>
+                    <a href="/default/longterm" class="nav-item nav-link">Uzun Dönem Kiralama</a>
+                    <a href="/default/service" class="nav-item nav-link">Hizmetlerimiz</a>
+                    <a href="/default/contact" class="nav-item nav-link">İletişim</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->

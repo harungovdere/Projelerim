@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiloKiralama_Api", "FiloKiralama_Api\FiloKiralama_Api.csproj", "{25E690B6-341E-440A-BE4B-3840D260E760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiloKiralama_UI", "FiloKiralama_UI\FiloKiralama_UI.csproj", "{199E4137-B6AF-44DD-A436-65EED04B6EDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25E690B6-341E-440A-BE4B-3840D260E760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25E690B6-341E-440A-BE4B-3840D260E760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25E690B6-341E-440A-BE4B-3840D260E760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25E690B6-341E-440A-BE4B-3840D260E760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{199E4137-B6AF-44DD-A436-65EED04B6EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199E4137-B6AF-44DD-A436-65EED04B6EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199E4137-B6AF-44DD-A436-65EED04B6EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199E4137-B6AF-44DD-A436-65EED04B6EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDE045E4-91AE-4D5F-BA9D-4946CCDF3D8E}
+	EndGlobalSection
+EndGlobal

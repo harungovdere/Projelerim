@@ -1,0 +1,144 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model FiloKiralama_UI.Dtos.FleetRentalDtos.CreateFleetRentalDto
+@{
+    ViewData["Title"] = "CreateFleetRental";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<h2>Filo Araç Kiralama</h2>
+
+<br />
+
+<h4>Filo Teklif Detayları</h4>
+<br />
+
+<div>
+    <form method="post">
+        <div class="row">
+
+            <div class="col-2 form-group">
+                <label>Filo Teklif Tarihi</label>
+                <input type="text" asp-for="TeklifTarihi" value="@(((DateTime)@ViewBag.teklifTarih).ToShortDateString())" class="form-control " readonly>
+            </div>
+            <div class="col-3 form-group">
+                <label>Firma Unvanı</label>
+                <input type="text" value="@ViewBag.firma" class="form-control " readonly>
+            </div>
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-2 form-group">
+                <label>Marka</label>
+                <input type="text" value="@ViewBag.marka" class="form-control " readonly>
+            </div>
+            <div class="col-3 form-group">
+                <label>Model</label>
+                <input type="text" value="@ViewBag.model" class="form-control " readonly>
+            </div>
+
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-2 form-group">
+                <label>Yıllık KM</label>
+                <input type="text" value="@ViewBag.km" class="form-control " readonly>
+            </div>
+            <div class="col-2 form-group">
+                <label>Kiralama Süresi</label>
+                <input type="text" id="sure" value="@ViewBag.sure" class="form-control " readonly>
+            </div>
+
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-2 form-group">
+                <label>Aylık Kira Fiyatı</label>
+                <input type="text" value="@ViewBag.aylikKira" class="form-control" readonly />
+            </div>
+            <div class="col-2 form-group">
+                <label>Yıllık Kira Fiyatı</label>
+                <input type="text" value="@ViewBag.yillikKira" class="form-control" readonly />
+            </div>
+            <br />
+
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-2 form-group">
+                <label>Kira Başlangıç Tarihi</label>
+                <input type="date" asp-for="KiraBaslangicTarihi" class="form-control" />
+                <span asp-validation-for="KiraBaslangicTarihi"></span>
+            </div>
+            <div class="col-2 form-group">
+                <label>Kira Bitiş Tarihi</label>
+                <input type="date" asp-for="KiraBitisTarihi" class="form-control" readonly />
+                <span asp-validation-for="KiraBitisTarihi"></span>
+            </div>
+            <br />
+
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-2 form-group">
+                <label>Kiralanacak Araç Plakası</label>
+                @Html.DropDownListFor(x => x.Plaka, (List<SelectListItem>)ViewBag.plakalar, new { @class = "form-control", multiple = "multiple" })
+                @*  Burada plaka değer olarak AracID tutmaktadır. *@
+                <span asp-validation-for="Plaka"></span>
+                <br />
+                <span asp-validation-for="Plaka.Count"></span>
+            </div>
+            <div class="col-2 form-group">
+                <label>Kiralanacak Araç Adedi</label>
+                <input type="text" asp-for="KiralanacakAracAdedi" value="@ViewBag.kiralanacakAracAdedi" class="form-control"  readonly />
+                <span asp-validation-for="KiralanacakAracAdedi"></span>
+            </div>
+            <br />
+
+            <input type="hidden" asp-for="TeklifID" value="@ViewBag.teklifID" class="form-control" />
+            <input type="hidden" asp-for="Durum" value="1" class="form-control" />
+            <span asp-validation-for="TeklifID"></span>
+
+        </div>
+        <br />
+
+        <button type="submit" id="kirala" class="btn btn-primary">Filo Kirala</button>
+    </form>
+</div>
+
+<script src="~/js/jquery-3.7.1.js"></script>
+@* <script src="~/js/jquery.mask.js"></script> *@
+
+@* <script type='text/javascript' src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script> *@
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
+<script type="text/javascript">
+
+    $("#KiraBaslangicTarihi").change(function () {
+        var zaman = $("#sure").val();
+        var baslangic = $("#KiraBaslangicTarihi").val();
+        var yil = baslangic.substring(0, 4);
+
+        if (zaman == 12) {
+            baslangic = baslangic.replace(yil, Number(yil) + 1)
+            $("#KiraBitisTarihi").val(baslangic)
+        }
+        else if (zaman == 24) {
+            baslangic = baslangic.replace(yil, Number(yil) + 2)
+            $("#KiraBitisTarihi").val(baslangic)
+        }
+        else {
+            baslangic = baslangic.replace(yil, Number(yil) + 3)
+            $("#KiraBitisTarihi").val(baslangic)
+        }
+    })
+    
+</script>
+

@@ -1,0 +1,91 @@
+﻿@using X.PagedList.Web.Common
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<FiloKiralama_UI.Dtos.CarDtos.ResultCarDto>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Filo Kiralama Admin Paneli</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="/dashmin/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/dashmin/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/dashmin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/dashmin/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/dashmin/css/style.css" rel="stylesheet">
+</head>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">AracID</th>
+                <th scope="col">Plaka</th>
+                <th scope="col">Marka</th>
+                <th scope="col">Model</th>
+                <th scope="col">Model Yılı</th>
+                <th scope="col">KM</th>
+                <th scope="col">Renk</th>
+                <th scope="col">Şanzıman</th>
+                <th scope="col">Yakıt Tipi</th>
+                <th scope="col">Durumu</th>
+                <th scope="col">Sil</th>
+                <th scope="col">Güncelle</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.AracID</td>
+                    <td>@item.Plaka</td>
+                    <td>@item.MarkaAdi</td>
+                    <td>@item.TipAdi</td>
+                    <td>@item.ModelYili</td>
+                    <td>@item.KM</td>
+                    <td>@item.Renk</td>
+                    <td>@item.Sanziman</td>
+                    <td>@item.YakitTipi</td>
+                    <td>@item.Durum</td>
+                    <td><a href="/Car/DeleteCar/@item.AracID" onclick="return confirm('Silmek istiyor musunuz?')" class="btn btn-outline-danger">Sil</a></td>
+                    <td><a href="/Car/UpdateCar/@item.AracID" class="btn btn-outline-primary">Güncelle</a></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pull-right">
+        @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index",
+                 new
+                 {
+                     page
+                 }),
+                 new PagedListRenderOptions
+        {
+            LiElementClasses = new string[] { "page-item" },
+            PageClasses = new string[] { "page-link" },
+            Display = PagedListDisplayMode.IfNeeded
+
+        })
+    </div>
+
+</div>

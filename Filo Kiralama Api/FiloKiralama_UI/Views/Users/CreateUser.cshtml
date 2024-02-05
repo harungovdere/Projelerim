@@ -1,0 +1,120 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model FiloKiralama_UI.Dtos.UsersDtos.CreateUsersDto
+
+@{
+    ViewData["Title"] = "CreateUser";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+<h5>Kullanıcı veya Üye Ekleme</h5>
+@* <button id="test">testt</button> *@
+<div>
+    <form method="post">
+        <div class="row">
+
+            <div class="col-4 form-group">
+                <label>Kimlik No</label>
+                <input type="text" asp-for="TC" class="form-control" />
+                <span asp-validation-for="TC"></span>
+                @if (ViewBag.tc != "" || ViewBag.tc != null)
+                {
+                    <span>@ViewBag.tc</span>
+                }
+                <br />
+                <label>Ad</label>
+                <input type="text" asp-for="Ad" onkeyup="PlakaUcase(this)" placeholder="Adınız" class="form-control" />
+                <span asp-validation-for="Ad"></span>
+                <br />
+                <label>Soyad</label>
+                <input type="text" asp-for="Soyad" onkeyup="PlakaUcase(this)" placeholder="Soyadınız" class="form-control" />
+                <span asp-validation-for="Soyad"></span>
+                <br />
+                <label>Doğum Tarihi</label>
+                <input type="date" asp-for="DogumTarihi" class="form-control" />
+                <span asp-validation-for="DogumTarihi"></span>
+                <br />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="erkek" class="radio-inline">Erkek</label>
+                        <input type="radio" asp-for="Cinsiyet" id="erkek" value="ERKEK">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="kadin" class="radio-inline">Kadın</label>
+                        <input type="radio" asp-for="Cinsiyet" id="kadin" value="KADIN">
+                    </div>
+                </div>
+                <span asp-validation-for="Cinsiyet"></span>
+                <br />
+                <label>Ehliyet No</label>
+                <input type="text" asp-for="EhliyetNo" placeholder="Ehliyet numranız" class="form-control">
+                <span asp-validation-for="EhliyetNo"></span>
+                <br />
+                <label>Ehliyet Sınıfı</label>
+                @Html.DropDownListFor(x => x.EhliyetSinifi, new SelectListItem[]{
+                new SelectListItem() {Text = "B", Value = "B" },
+                new SelectListItem() { Text = "C", Value = "C" },
+                new SelectListItem() { Text = "D", Value = "D" },
+                new SelectListItem() { Text = "E", Value = "E" },
+                },
+                "Ehliyet Seçiniz", new { @class = "form-control" })
+                <span asp-validation-for="EhliyetSinifi"></span>
+                <br />
+                <label>E-Posta</label>
+                <input type="email" asp-for="Email" placeholder="Mail adresiniz" class="form-control">
+                <span asp-validation-for="Email"></span>
+                @if (ViewBag.msg != "" || ViewBag.msg != null)
+                {
+                    <span>@ViewBag.msg</span>
+                }
+                <br />
+                <label>Telefon</label>
+                <input type="text" asp-for="CepTel" placeholder="Telefon numaranız" class="form-control">
+                <span asp-validation-for="CepTel"></span>
+                <br />
+                <label>Şifre</label>
+                <input type="text" asp-for="Sifre" placeholder="Şifreniz" class="form-control">
+                <span asp-validation-for="Sifre"></span>
+                <br />
+                <label>Rol</label>
+                @Html.DropDownListFor(x => x.Role, new SelectListItem[]{
+                new SelectListItem() {Text = "Admin", Value = "Admin" },
+                new SelectListItem() { Text = "Uye", Value = "Uye" },
+                        },
+                         "Rol Seçiniz", new { @class = "form-control" })
+                <span asp-validation-for="Role"></span>
+
+                <br />
+                <button id="kaydet" class="btn btn-primary">Kullanıcı Kaydet</button>
+                <br />
+                <br />
+            </div>
+        </div>
+    </form>
+</div>
+<script src="~/js/jquery-3.7.1.js"></script>
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
+<script>
+
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+    function PlakaUcase(UpCstr) {
+        var UCStr = UpCstr.value;
+        UpCstr.value = UCStr.toUpperCase();
+    }
+
+    var $j = jQuery.noConflict();
+    $j(document).ready(function () {
+        $j("#CepTel").inputmask({
+            mask: "(999) 999-9999"
+        });
+        $j('#TC').inputmask('99999999999');
+        $j('#EhliyetNo').inputmask('999999');
+    });
+
+</script>
+

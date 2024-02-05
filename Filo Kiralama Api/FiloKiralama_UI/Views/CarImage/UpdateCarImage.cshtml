@@ -1,0 +1,104 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model FiloKiralama_UI.Dtos.CarImageDtos.UpdateImageDto
+
+@{
+    ViewData["Title"] = "UpdateCarImage";
+    Layout = "~/Views/Admin/Index.cshtml";
+    // Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<button id="test">testt</button>
+
+<br />
+@using (Html.BeginForm("UpdateCarImage", "CarImage", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="hidden" asp-for="ResimID" class="form-control" />
+    <br />
+    <label>Marka</label>
+    @Html.DropDownListFor(x => x.MarkaKodu, (List<SelectListItem>)ViewBag.v, new { @class = "form-control", @disabled = "disabled" })
+    <br />
+    <label>Model</label>
+    @Html.DropDownListFor(x => x.TipKodu, (List<SelectListItem>)ViewBag.m, new { @class = "form-control", @disabled = "disabled" })
+    <br />
+    <input type="hidden" asp-for="DosyaAdi" class="form-control" disabled="disabled" />
+    <br />
+    <label>Kayıtlı Görsel</label>
+    <br />
+    <img class="img-fluid mb-4" src="/Uploads/@Model.DosyaAdi">
+    <br />
+    <label>Görsel Değiştir</label>
+    <input type="file" asp-for="Dosya" class="form-control" />
+    <span asp-validation-for="Dosya"></span>
+    <br />
+    <button type="submit" id="kaydet" class="btn btn-primary">Güncelle</button>
+    @* <input type="submit" class="btn btn-primary" value="Güncelle" /> *@
+    <br />
+}
+<script src="~/js/jquery-3.7.1.js"></script>
+<script>
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+    $(function () {
+        $('#TipKodu').change(function () {
+            $('#DosyaAdi').empty();
+            var AracTipAdi = $('#TipKodu option:selected').text()
+            $('#DosyaAdi').val(AracTipAdi);
+        });
+    });
+    $(function () {
+        $('#kaydet').click(function () {
+            $('#DosyaAdi').empty();
+            var AracTipAdi = $('#TipKodu option:selected').text()
+            $('#DosyaAdi').val(AracTipAdi);
+        });
+    });
+    // $(function () {
+    //     $('#Dosya').change(function () {
+    //         alert($('#Dosya').val());
+    //     });
+    // });
+   
+    $(document).ready(function () {
+        $(function () {
+            $.ajax({
+                url: '/Car/MarkaGetir',
+                success: function (data) {
+                    console.log(data);
+                    $('#MarkaKodu').append("<option value='" + "" + "'>" + "Marka Seçiniz" + "</Option>");
+                    $('#TipKodu').append("<option value='" + "" + "'>" + "Model Seçiniz" + "</Option>");
+
+                    for (var i = 0; i < data.length; i++) {
+                        $('#MarkaKodu').append("<option value='" + data[i].value + "'>" + data[i].text + "</Option>");
+                    }
+                }
+            });
+        });
+    });
+
+    $(function () {
+        $('#MarkaKodu').change(function () {
+            var MarkaKoduID = $('#MarkaKodu').val();
+            $('#TipKodu').empty();
+            $('#ModelYili').empty();
+            $('#ModelYili').append("<option value='" + "" + "'>" + "Model Yılı Seçiniz" + "</Option>");
+            $('#TipKodu').append("<option value='" + "" + "'>" + "Model Seçiniz" + "</Option>");
+            $.ajax({
+                url: '/Car/ModelGetir',
+                data: { MarkaKodu: MarkaKoduID },
+                //dataType: "Json",
+                //type: "post",
+                success: function (data) {
+                    console.log(data);
+                    for (var i = 0; i < data.length; i++) {
+                        $('#TipKodu').append("<option value='" + data[i].value + "'>" + data[i].text + "</Option>");
+                    }
+                }
+            });
+        });
+    });
+</script>
+

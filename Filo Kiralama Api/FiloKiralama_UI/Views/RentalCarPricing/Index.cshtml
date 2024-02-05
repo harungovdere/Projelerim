@@ -1,0 +1,136 @@
+﻿@using X.PagedList.Web.Common
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<FiloKiralama_UI.Dtos.RentalCarPricingDtos.ResultRentalCarPricingDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<div class="container-fluid pt-1 px-1">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Kiralık Araç Fiyatlama</h6>
+                @* <button id="test">test</button> *@
+                @using (Html.BeginForm("Index", "RentalCarPricing", FormMethod.Post))
+                {
+                    <div>
+                        <div style="float:left">
+                            @Html.TextBox("ara", null, new
+                                {
+                                    @class = "form-control",
+                                    @onkeyup = "PlakaUcase(this)",
+                                    @placeholder = "Marka adı giriniz"
+                                })
+                        </div>
+                        <div style="float:left">
+                            <input type="submit" class="btn btn-info" value="Ara" />
+                        </div>
+                    </div>
+                }
+                <br />
+                <br />
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ModelTipID</th>
+                                <th scope="col">Marka</th>
+                                <th scope="col">Model</th>
+                                <th scope="col">Şanzıman</th>
+                                <th scope="col">Yakıt Tipi</th>
+                                <th scope="col">Fiyat</th>
+                                <th scope="col">Fiyat Ekle/Güncelle</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.ModelTipID</td>
+                                    <td>@item.MarkaAdi</td>
+                                    <td>@item.TipAdi</td>
+                                    <td>@item.Sanziman</td>
+                                    <td>@item.YakitTipi</td>
+                                    <td>@item.GunlukKiraFiyat</td>
+                                    <td>
+                                        @using (Html.BeginForm("UpdatePricing", "RentalCarPricing", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                        {
+                                            <div>
+                                                <div style="float:left">
+                                                    <input name="GunlukKiraFiyat" id="GunlukFiyat-@item.ModelTipID" value="@item.GunlukKiraFiyat" type="text" onKeyPress="if(this.value.length==9) return false;" placeholder="Fiyat giriniz" />
+                                                    <input name="modelTipID" type="hidden" value="@item.ModelTipID" />
+                                                </div>
+
+                                                <div style="float:left">
+                                                    <button type="submit" onClick="tikla(this.id)" id="@item.ModelTipID" class="btn btn-outline-primary">Ekle/Güncelle</button>
+
+                                                </div>
+                                            </div>
+                                        }
+                                    </td>
+                                    @* <td><a href="/SecondHandPricing/DeleteSecondHandPricing/@item.AracID" onclick="return confirm('Silmek istiyor musunuz?')" class="btn btn-outline-danger">Sil</a></td> *@
+
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                    <small>Not: Fiyat Formatı aşağıdaki şekilde olmalıdır</small>
+                    <br />
+                    <small>Ör: 950,75 - 6.500,25 - 25.400,50</small>
+                    <br />
+                    <div class="pull-right">
+                        @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index",
+                                 new
+                                 {
+                                     page
+
+                                 }),
+                                 new PagedListRenderOptions
+                        {
+                            LiElementClasses = new string[] { "page-item" },
+                            PageClasses = new string[] { "page-link" },
+                            Display = PagedListDisplayMode.IfNeeded
+
+                        })
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script src="~/js/jquery-3.7.1.js"></script>
+<script>
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+
+    function PlakaUcase(UpCstr) {
+        var UCStr = UpCstr.value;
+        UpCstr.value = UCStr.toUpperCase();
+    }
+
+    function tikla(tiklanan_id) {
+        var id = "#GunlukFiyat-" + tiklanan_id;
+        if ($(id).val().length == 0) {
+            $(id).val(".")
+        }
+    }
+    $(document).ready(function () {
+        if ('@ViewBag.msg' == "mesaj") {
+            alert("Fiyat formatını hatalı girdiniz")
+        }
+
+    })
+
+</script>

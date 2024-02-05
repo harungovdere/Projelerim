@@ -1,0 +1,149 @@
+﻿@using X.PagedList.Web.Common
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<FiloKiralama_UI.Dtos.CarDtos.ResultCarDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container-fluid pt-1 px-1">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Araç Listesi</h6>
+                <div class="row">
+                    <div class="col-2 form-group">
+                        @using (Html.BeginForm("Index", "Car", FormMethod.Post))
+                        {
+                            <div>
+                            @Html.DropDownList("durum", new SelectListItem[]{ 
+                            new SelectListItem() {Text = "Tümü", Value = "" },
+                            new SelectListItem() { Text = "FİLO KİRADA", Value = "FİLO KİRADA" },
+                            new SelectListItem() { Text = "GÜNLÜK KİRADA", Value = "GÜNLÜK KİRADA" },
+                            new SelectListItem() { Text = "GÜNLÜK KİRALIK", Value = "GÜNLÜK KİRALIK" },
+                            new SelectListItem() { Text = "İKİNCİ EL", Value = "İKİNCİ EL" },
+                            new SelectListItem() { Text = "STOKDA", Value = "STOKDA" },
+                            new SelectListItem() { Text = "SATILDI", Value = "SATILDI" },
+                            new SelectListItem() { Text = "PERT", Value = "PERT" },
+                            new SelectListItem() { Text = "KİRADAN DÖNDÜ", Value = "KİRADAN DÖNDÜ" }
+                            },
+                            "Durum Seçiniz",new {@class="form-control",@onchange = @"form.submit();"}
+                            )
+                            </div>
+                        }
+                    </div>
+                    <div class="col-3 form-group">
+                        @using (Html.BeginForm("Index", "Car", FormMethod.Post))
+                        {
+                            <div>
+                                <div style="float:left">
+                                    @Html.TextBox("ara", null, new
+                                        {
+                                            @class = "form-control",
+                                            @onkeyup = "PlakaUcase(this)",
+                                            @placeholder = "Aranacak plakayı giriniz"
+                                        })
+                                </div>
+                                <div style="float:left">
+                                    <input type="submit" class="btn btn-info" value="Ara" />
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+                <br />
+                <br />
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">AracID</th>
+                                <th scope="col">Plaka</th>
+                                <th scope="col">Marka</th>
+                                <th scope="col">Model</th>
+                                <th scope="col">Model Yılı</th>
+                                <th scope="col">KM</th>
+                                <th scope="col">Renk</th>
+                                <th scope="col">Şanzıman</th>
+                                <th scope="col">Yakıt Tipi</th>
+                                <th scope="col">Durumu</th>
+                                <th scope="col">Sil</th>
+                                <th scope="col">Güncelle</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.AracID</td>
+                                    <td>@item.Plaka</td>
+                                    <td>@item.MarkaAdi</td>
+                                    <td>@item.TipAdi</td>
+                                    <td>@item.ModelYili</td>
+                                    <td>@item.KM</td>
+                                    <td>@item.Renk</td>
+                                    <td>@item.Sanziman</td>
+                                    <td>@item.YakitTipi</td>
+                                    <td>@item.Durum</td>
+                                    <td><a href="/Car/DeleteCar/@item.AracID" onclick="return confirm('Silmek istiyor musunuz?')" class="btn btn-outline-danger">Sil</a></td>
+                                    <td><a href="/Car/UpdateCar/@item.AracID" class="btn btn-outline-primary">Güncelle</a></td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <div class="pull-right">
+                        @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index",
+                                 new
+                                 {
+                                     page
+                                 }),
+                                 new PagedListRenderOptions
+                        {
+                            LiElementClasses = new string[] { "page-item" },
+                            PageClasses = new string[] { "page-link" },
+                            Display = PagedListDisplayMode.IfNeeded
+
+                        })
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script src="~/js/jquery-3.7.1.js"></script>
+<script>
+    $("#test").click(function () {
+        alert("çalıştı")
+    })
+
+    function PlakaUcase(UpCstr) {
+        var UCStr = UpCstr.value;
+        UpCstr.value = UCStr.toUpperCase();
+    }
+    $(".page-item").change(function () {
+
+    })
+
+    // $("#Durum").change(function () {
+    //     var Durum = $('#Durum').val();
+    //     alert(Durum)
+    //     $.ajax({
+    //         url: '/Car/Index',
+    //         data: { durum: Durum },
+    //         success: function (data) {
+    //             console.log(data);
+
+    //         }
+    //     })
+    // })
+
+
+</script>
