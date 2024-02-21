@@ -31,7 +31,7 @@ namespace FiloKiralama_Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetFleetCustomer(int id)
+        public async Task<IActionResult> GetFleetCustomer(string id)
         {
             var value = await _fleetRentCustomersRepository.GetFleetCustomer(id);
             return Ok(value);

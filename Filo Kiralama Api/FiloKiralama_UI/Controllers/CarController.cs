@@ -74,9 +74,15 @@ namespace FiloKiralama_UI.Controllers
             renk.Add(new SelectListItem { Text = "GRİ", Value = "GRİ" });
             renk.Add(new SelectListItem { Text = "SİYAH", Value = "SİYAH" });
 
+            List<SelectListItem> durum = new List<SelectListItem>();
+            durum.Add(new SelectListItem { Text = "FİLO KİRALIK", Value = "2" });
+            durum.Add(new SelectListItem { Text = "GÜNLÜK KİRALIK", Value = "4" });
+            //durum.Add(new SelectListItem { Text = "STOKDA", Value = "6" });
+
             ViewBag.s = sanziman;
             ViewBag.y = yakit;
             ViewBag.r = renk;
+            ViewBag.d = durum;
 
             return View();
         }
@@ -162,9 +168,15 @@ namespace FiloKiralama_UI.Controllers
                         renk.Add(new SelectListItem { Text = "GRİ", Value = "GRİ" });
                         renk.Add(new SelectListItem { Text = "SİYAH", Value = "SİYAH" });
 
+                        List<SelectListItem> durum = new List<SelectListItem>();
+                        durum.Add(new SelectListItem { Text = "FİLO KİRALIK", Value = "2" });
+                        durum.Add(new SelectListItem { Text = "GÜNLÜK KİRALIK", Value = "4" });
+                        //durum.Add(new SelectListItem { Text = "STOKDA", Value = "6" });
+
                         ViewBag.s = sanziman;
                         ViewBag.y = yakit;
                         ViewBag.r = renk;
+                        ViewBag.d = durum;
                         return View();
                     }
                 }
@@ -258,14 +270,14 @@ namespace FiloKiralama_UI.Controllers
             renk.Add(new SelectListItem { Text = "SİYAH", Value = "SİYAH" });
 
             List<SelectListItem> durum = new List<SelectListItem>();
-            durum.Add(new SelectListItem { Text = "FİLO KİRADA", Value = "1" });
+            //durum.Add(new SelectListItem { Text = "FİLO KİRADA", Value = "1" });
             durum.Add(new SelectListItem { Text = "FİLO KİRALIK", Value = "2" });
-            durum.Add(new SelectListItem { Text = "GÜNLÜK KİRADA", Value = "3" });
+            //durum.Add(new SelectListItem { Text = "GÜNLÜK KİRADA", Value = "3" });
             durum.Add(new SelectListItem { Text = "GÜNLÜK KİRALIK", Value = "4" });
-            durum.Add(new SelectListItem { Text = "İKİNCİ EL", Value = "5" });
-            durum.Add(new SelectListItem { Text = "STOKDA", Value = "6" });
-            durum.Add(new SelectListItem { Text = "SATILDI", Value = "7" });
-            durum.Add(new SelectListItem { Text = "PERT", Value = "8" });
+            //durum.Add(new SelectListItem { Text = "İKİNCİ EL", Value = "5" });
+            //durum.Add(new SelectListItem { Text = "STOKDA", Value = "6" });
+            //durum.Add(new SelectListItem { Text = "SATILDI", Value = "7" });
+            //durum.Add(new SelectListItem { Text = "PERT", Value = "8" });
 
             ViewBag.v = markaValues;
             ViewBag.m = modelValues;
@@ -362,14 +374,14 @@ namespace FiloKiralama_UI.Controllers
                         renk.Add(new SelectListItem { Text = "SİYAH", Value = "SİYAH" });
 
                         List<SelectListItem> durum = new List<SelectListItem>();
-                        durum.Add(new SelectListItem { Text = "FİLO KİRADA", Value = "1" });
+                        //durum.Add(new SelectListItem { Text = "FİLO KİRADA", Value = "1" });
                         durum.Add(new SelectListItem { Text = "FİLO KİRALIK", Value = "2" });
-                        durum.Add(new SelectListItem { Text = "GÜNLÜK KİRADA", Value = "3" });
+                        //durum.Add(new SelectListItem { Text = "GÜNLÜK KİRADA", Value = "3" });
                         durum.Add(new SelectListItem { Text = "GÜNLÜK KİRALIK", Value = "4" });
-                        durum.Add(new SelectListItem { Text = "İKİNCİ EL", Value = "5" });
-                        durum.Add(new SelectListItem { Text = "STOKDA", Value = "6" });
-                        durum.Add(new SelectListItem { Text = "SATILDI", Value = "7" });
-                        durum.Add(new SelectListItem { Text = "PERT", Value = "8" });
+                        //durum.Add(new SelectListItem { Text = "İKİNCİ EL", Value = "5" });
+                        //durum.Add(new SelectListItem { Text = "STOKDA", Value = "6" });
+                        //durum.Add(new SelectListItem { Text = "SATILDI", Value = "7" });
+                        //durum.Add(new SelectListItem { Text = "PERT", Value = "8" });
 
                         ViewBag.v = markaValues;
                         ViewBag.m = modelValues;

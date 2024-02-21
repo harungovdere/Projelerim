@@ -30,6 +30,16 @@ namespace FiloKiralama_Api.Repositories.SecondHandSalesRepository
             {
                 await connection.ExecuteAsync(query, parameters);
             }
+
+            string query2 = "UPDATE IKINCIEL_RANDEVU SET Durum=2 WHERE AracID=@AracID";
+            var parameters2 = new DynamicParameters();
+            parameters2.Add("@AracID", createSecondHandSalesDto.AracID);
+            
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.ExecuteAsync(query2, parameters2);
+            }
+
         }
 
         public async Task<ResultSecondHandSalesDto> GetSecondHandSales(int id)
@@ -46,7 +56,7 @@ namespace FiloKiralama_Api.Repositories.SecondHandSalesRepository
 
         public async Task<List<ResultSecondHandSalesDto>> GetAllSecondHandSales()
         {
-            string query = "SELECT A.AracID,A.Plaka,A.MarkaKodu,M.MarkaAdi,A.TipKodu,N.TipAdi,N.ModelTipID,A.ModelYili,A.KM,A.Renk,A.Sanziman,A.YakitTipi,D.Durum,F.Fiyat FROM  ARACLAR A  LEFT OUTER JOIN IKINCIEL_FIYATLAR F ON A.AracID=F.AracID INNER JOIN MARKALAR M ON M.MarkaKodu = A.MarkaKodu INNER JOIN MODELLER N ON N.TipKodu = A.TipKodu AND M.MarkaKodu = N.MarkaKodu  INNER JOIN ARAC_DURUM D ON D.DurumID=A.Durum WHERE D.DurumID=5 ORDER BY A.Plaka";
+            string query = "SELECT A.AracID,A.Plaka,A.MarkaKodu,M.MarkaAdi,A.TipKodu,N.TipAdi,N.ModelTipID,A.ModelYili,A.KM,A.Renk,A.Sanziman,A.YakitTipi,D.Durum,F.Fiyat FROM  ARACLAR A  LEFT OUTER JOIN IKINCIEL_FIYATLAR F ON A.AracID=F.AracID INNER JOIN MARKALAR M ON M.MarkaKodu = A.MarkaKodu INNER JOIN MODELLER N ON N.TipKodu = A.TipKodu AND M.MarkaKodu = N.MarkaKodu  INNER JOIN ARAC_DURUM D ON D.DurumID=A.Durum WHERE D.DurumID=5 AND F.Fiyat IS NOT NULL ORDER BY A.Plaka";
 
             using (var connection = _context.CreateConnection())
             {

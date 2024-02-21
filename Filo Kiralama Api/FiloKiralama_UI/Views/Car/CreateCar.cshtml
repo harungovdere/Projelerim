@@ -64,9 +64,9 @@
             <span asp-validation-for="YakitTipi"></span>
             <br />
             <input asp-for="Durum" type="hidden" value="6" />
-            @* <label>Durumu</label>
+            <label>Durumu</label>
             @Html.DropDownListFor(x => x.Durum, (List<SelectListItem>)ViewBag.d, "Durum Seçiniz", new { @class = "form-control" })
-            <span asp-validation-for="Durum"></span> *@
+            <span asp-validation-for="Durum"></span>
             <br />
             <button id="kaydet" class="btn btn-primary">Araç Kaydet</button>
             <br />

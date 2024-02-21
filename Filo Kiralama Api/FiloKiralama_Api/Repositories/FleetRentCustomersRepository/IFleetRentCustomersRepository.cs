@@ -7,6 +7,6 @@ namespace FiloKiralama_Api.Repositories.FleetRentCustomersRepository
     {
         void CreateFleetCustomer(CreateFleetRentCustomersDto createFleetRentCustomersDto);
         Task<List<ResultFleetRentCustomersDto>> GetAllFleetCustomers();
-        Task<ResultFleetRentCustomersDto> GetFleetCustomer(int id);
+        Task<ResultFleetRentCustomersDto> GetFleetCustomer(string id);
     }
 }

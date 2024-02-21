@@ -31,7 +31,7 @@ namespace FiloKiralama_Api.Repositories.SecondHandAppointmentRepository
 
         public async Task<List<ResultSecondHandAppointmentDto>> GetAllSecondHandAppointment()
         {
-            string query = "SELECT R.*,K.Ad,K.Soyad,K.Email,K.CepTel,A.Plaka,CASE WHEN R.Durum=1 THEN 'AKTİF' ELSE 'İPTAL' END AS Durum FROM IKINCIEL_RANDEVU R INNER JOIN ARACLAR A ON A.AracID=R.AracID INNER JOIN KULLANICILAR K ON R.KullaniciID=K.KullaniciID WHERE R.RandevuTarihi >= CONVERT(VARCHAR,GETDATE(),23) ORDER BY R.RandevuID DESC";
+            string query = "SELECT R.*,K.Ad,K.Soyad,K.Email,K.CepTel,A.Plaka,CASE WHEN R.Durum=1 THEN 'AKTİF' ELSE 'İPTAL' END AS Durum FROM IKINCIEL_RANDEVU R INNER JOIN ARACLAR A ON A.AracID=R.AracID INNER JOIN KULLANICILAR K ON R.KullaniciID=K.KullaniciID WHERE R.RandevuTarihi >= CONVERT(VARCHAR,GETDATE(),23) AND A.Durum=5 ORDER BY R.RandevuID DESC";
 
             using (var connection = _context.CreateConnection())
             {

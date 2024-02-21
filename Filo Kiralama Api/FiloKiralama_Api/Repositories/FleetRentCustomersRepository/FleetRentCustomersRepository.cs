@@ -45,7 +45,7 @@ namespace FiloKiralama_Api.Repositories.FleetRentCustomersRepository
             }
         }
 
-        public async Task<ResultFleetRentCustomersDto> GetFleetCustomer(int id)
+        public async Task<ResultFleetRentCustomersDto> GetFleetCustomer(string id)
         {
             string query = "SELECT * FROM FILO_MUSTERILER  WHERE VergiNoKimlikNo=@VergiNoKimlikNo";
             var parameters = new DynamicParameters();

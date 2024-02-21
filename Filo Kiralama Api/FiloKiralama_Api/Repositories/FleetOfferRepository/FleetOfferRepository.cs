@@ -35,7 +35,7 @@ namespace FiloKiralama_Api.Repositories.FleetOffer
 
         public async Task<List<ResultFleetOfferDto>> GetAllOffer()
         {
-            string query = "SELECT K.*,T.*,F.FirmaUnvani,M.MarkaAdi,N.TipAdi FROM FILO_KIRALAMA_TEKLIFLER K INNER JOIN FILO_KIRALAMA_TALEPLERI T ON T.FiloTalepID=K.TalepID INNER JOIN FILO_MUSTERILER F ON F.FiloMusteriID=T.MusteriID INNER JOIN MARKALAR M ON M.MarkaKodu=T.MarkaKodu INNER JOIN MODELLER N ON N.TipKodu=T.TipKodu AND M.MarkaKodu=N.MarkaKodu LEFT OUTER JOIN FILO_KIRALANAN_ARACLAR B ON B.TeklifID=K.TeklifID WHERE B.FiloID IS NULL ORDER BY K.TeklifID DESC";
+            string query = "SELECT K.*,T.*,F.FirmaUnvani,M.MarkaAdi,N.TipAdi FROM FILO_KIRALAMA_TEKLIFLER K INNER JOIN FILO_KIRALAMA_TALEPLERI T ON T.FiloTalepID=K.TalepID INNER JOIN FILO_MUSTERILER F ON F.FiloMusteriID=T.MusteriID INNER JOIN MARKALAR M ON M.MarkaKodu=T.MarkaKodu INNER JOIN MODELLER N ON N.TipKodu=T.TipKodu AND M.MarkaKodu=N.MarkaKodu LEFT OUTER JOIN FILO_KIRALANAN_ARACLAR B ON B.TeklifID=K.TeklifID WHERE B.FiloID IS NULL AND DATEADD(DAY,10,K.TeklifTarihi)>=GETDATE() ORDER BY K.TeklifID DESC";
 
             using (var connection = _context.CreateConnection())
             {

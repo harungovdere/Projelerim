@@ -7,35 +7,33 @@
 <!-- Topbar Start -->
 <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
     <div class="row">
-        <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+        <div class="col-md-5 text-center text-lg-left mb-2 mb-lg-0">
             <div class="d-inline-flex align-items-center">
                 <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</a>
                 <span class="text-body">|</span>
                 <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>info@example.com</a>
             </div>
         </div>
-        <div class="col-md-5 text-center text-lg-right">
+        <div class="col-md-6 text-center text-lg-right">
             <div class="d-inline-flex align-items-center">
                 @if (ViewBag.usd != null)
                 {
-                    <a class="text-body px-2">
+                    <a class="text-body px-3">
                         DOLAR: @ViewBag.usd
                     </a>
-                    <a class="text-body px-2">
+                    <a class="text-body px-3">
                         EURO: @ViewBag.eur
                     </a>
-                    <a class="text-body px-2">
+                    <a class="text-body px-3">
                         STERLİN: @ViewBag.gbp
                     </a>
-                    <a class="text-body px-2">
+                    <a class="text-body px-3">
 
                     </a>
-                    <a class="text-body px-2">
+                    <a class="text-body px-3">
 
                     </a> 
-                    <a class="text-body px-2">
 
-                    </a>
                 }
                 @* @ClaimsIdentity identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme); *@
                 @* @if (SignInManager.IsSignedIn(User))
@@ -55,7 +53,7 @@
                 </div>
 
                 } *@
-
+               
                 @if (@User.Identity.Name != null)
                 {
                     <div class="dropdown show">
@@ -75,9 +73,9 @@
                 }
                 else
                 {
-                    <a href="/Default/Login" class="nav-item nav-link">Üye Girişi</a>
+                    <a href="/Default/Login" >Üye Girişi</a>
                 }
-
+                
             </div>
         </div>
     </div>
